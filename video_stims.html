@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Video Resources | Malle Lab</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="video_stims.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="_scripts/jquery.min.js"><\/script>')</script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+				// hide vinfo and show less items when videos load
+				$(".vid_hidden").hide();
+				$(".less").hide();
+			});
+		$(document).ready(function(){
+			$(".more").click(function(){
+				$(this).hide();
+				$this = $(this).attr("id");
+				$(".less#" + $this).show();
+				$(".vid_hidden#" + $this).slideDown();
+			});
+		})
+		$(document).ready(function(){
+			$(".less").click(function(){
+				$(this).hide();
+				$(".more#" + $this).show();
+				$(".vid_hidden#" + $this).slideUp();
+			});
+		});
+
+		$(document).ready(function () {
+			$("#show_videos").click(function(){
+				$resultsArea = $('#lookup-results');
+				$.getJSON("videos_json.json", function(data){
+					if (data.length > 0) {
+						var par = "";
+						$.each(data, function(i, obj) {
+							par += "<div class='vid_box'><div class='vid_header'>";
+							par += "<div class='vid_id'>" + obj.ID + "</a></div>";
+							par += "<div class='vid'><a href='videos/" + obj.ID + ".mpeg'>Download/Watch</a></div><div class='head_info'>";
+							par += "<div class='source'><b>Source:</b><br>" + obj.Source + "</div>";
+							par += "<div class='duration'><b>Duration:</b><br>" + obj.Duration + " sec. </div>";
+							par += "<div class='description'><b>Description:</b><br>" + obj.Description + "</div></div>";
+
+							par += "<div class='vid_hidden' id='" + obj.ID + "'>";
+							par += "<div class='vinfo'><b>Intentionality:</b> " + obj.Intentionality + "</div>";
+							par += "<div class='vinfo'><b>Traits:</b> " + obj.Traits + "</div>";
+							par += "<div class='vinfo'><b>Goals:</b> " + obj.Goals + "</div>";
+							par += "<div class='vinfo'><b>Beliefs:</b> " + obj.Beliefs + "</div>";
+							par += "<div class='vinfo'><b>Emotions:</b> " + obj.Emotions + "</div>";
+							par += "<div class='vinfo'><b># People:</b> " + obj.Num_People + "</div>";
+							par += "<div class='vinfo'><b>People:</b> " + obj.People + "</div>";
+							par += "<div class='vinfo'><b>Dialogue:</b> " + obj.Dialogue + "</div>";
+							par += "<div class='vinfo'><b>Indoor/Outdoor:</b> " + obj.Indoor_Outdoor + "</div>";
+							par += "<div class='vinfo'><b>Location:</b> " + obj.Location + "</div>";
+							par += "<div class='vinfo'><b>Social Interaction:</b> " + obj.Social_Interaction + "</div>";
+							par += "<div class='vinfo'><b>Engaging Object:</b> " + obj.Engaging_Object + "</div>";
+							par += "<div class='vinfo'><b>Free Choice:</b> " + obj.Free_Choice + "</div>";
+							par += "<div class='vinfo'><b>Social Desirability (1-7):</b> " + obj.Social_Desirability + "</div>";
+							par += "<div class='vinfo'><b>Interestingness (1-7):</b> " + obj.Interestingness + "</div>";
+							par += "<div class='vinfo'><b>Word Count:</b> " + obj.Word_Count + "</div>";
+							par += "<div class='vinfo'><b>Perspective:</b> " + obj.Perspective + "</div>";
+							par += "<div class='vinfo'><b>Tense:</b> " + obj.Tense + "</div>";
+							par += "<div class='vinfo'><b>Script:</b> " + obj.Script + "</div>";
+
+							par += "</div></div><div class='vid_foot'>";
+							par += "<a href='#' class='more' id='" + obj.ID + "'>(show more)</a>";
+							par += "<a href='#' class='less' id='" + obj.ID + "'>(show less)</a>";
+							par += "</div></div>";
+						});			
+						$resultsArea.html(par);
+						$(".less").hide();
+						$(".more").show();
+						$(".vid_hidden").hide();
+						$(".more").click(function(){
+							$(this).hide();
+							$this = $(this).attr("id");
+							$(".less#" + $this).show();
+							$(".vid_hidden#" + $this).slideDown();
+						});
+						$(".less").click(function(){
+							$(this).hide();
+							$(".more#" + $this).show();
+							$(".vid_hidden#" + $this).slideUp();
+						});
+					};
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="back">
+		<div class="leftcol">
+			<div class="leftfloat" style="height:150px; background-color:blue">&nbsp;</div>
+			<div class="leftfloat" style="height:220px; background-color:white">&nbsp;</div>
+			<div class="leftfloat" style="height:300px; background-color:yellow">&nbsp;</div>
+			<div class="leftfloatbottom" style="height:85px; background-color:white">&nbsp;</div>
+
+		</div>
+
+		<div class="rightcol">
+			<div class="header">
+				<p><a href="index.html"><b>Social Cognitive Science Research Center</b></a> | <a href="http://www.brown.edu">Brown University</a></p>
+			</div>
+
+			<div class="header2">
+			<div class="projHeader">Video Resources</div>
+	        </div>
+
+			<div class="body">
+			<div class="video_body">
+				<p></p>
+				<p>This page is a draft of a more
+			complete video database (check back early 2015), first used in
+			the following publication):
+				<p> Malle, B. F., & Holbrook, J. (2012). Is there a hierarchy of social inferences? The likelihood and speed of inferring intentionality, mind, and personality. <em>Journal of Personality and Social Psychology, 102,</em> 661–684.</p>
+				<br>
+				<h3>Videos</h3>
+				<p>Sample info box for one of the videos:</p>
+				<div class="vid_box">
+					<div class="vid_header">
+						<div class="vid_id">t1</div>
+						<div class="vid"><a href="videos/t1.mpeg">Download/Watch</a></div>
+						<div class="head_info">
+							<div class="source"><b>Source:</b><br>Uleman</div>
+							<div class="duration"><b>Duration:</b><br>11 sec.</div>
+							<div class="description"><b>Description:</b><br>The plumber slips an extra $50 into his wife's purse.</div>
+						</div>
+						<div class="vid_hidden" id="t1_sample">
+							<div class="vinfo"><b>Intentionality:</b> I</div>
+							<div class="vinfo"><b>Traits:</b> generous</div>
+							<div class="vinfo"><b>Goals:</b> </div>
+							<div class="vinfo"><b>Beliefs:</b> </div>
+							<div class="vinfo"><b>Emotions:</b> </div>
+							<div class="vinfo"><b># People:</b> 2</div>
+							<div class="vinfo"><b>People:</b> 1 man, 1 woman</div>
+							<div class="vinfo"><b>Dialogue:</b> Yes</div>
+							<div class="vinfo"><b>Indoor/Outdoor:</b> Yes</div>
+							<div class="vinfo"><b>Location:</b> Home</div>
+							<div class="vinfo"><b>Social Interaction:</b> Social</div>
+							<div class="vinfo"><b>Engaging Object:</b> Yes</div>
+							<div class="vinfo"><b>Free Choice:</b> Yes</div>
+							<div class="vinfo"><b>Social Desirability (1-7):</b> 5.3</div>
+							<div class="vinfo"><b>Interestingness (1-7):</b> 4.0</div>
+							<div class="vinfo"><b>Word Count:</b> 10</div>
+							<div class="vinfo"><b>Perspective:</b> Third</div>
+							<div class="vinfo"><b>Tense:</b> Present</div>
+							<div class="vinfo"><b>Script:</b> A man kisses a woman and then discretely puts a $50 bill into her purse.</div>
+						</div>
+					</div>
+					<div class="vid_foot">
+						<a href="#" class="more" id="t1_sample">(show more)</a>
+						<a href="#" class="less" id="t1_sample">(show less)</a>
+					</div>
+				</div>
+
+				<br>
+				<p>Email Bertram Malle for the full dataset.</p>
+				<p>To view information about all of the videos in our database, click the button below.</p>
+				<br>
+				<button id="show_videos">Show All Videos</button>
+				<div id="lookup-results"></div>
+			</div>
+			</div>
+			<div class="footer">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>

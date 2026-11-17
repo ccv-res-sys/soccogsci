@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 28.0px 0.0px; line-height: 29.0px; font: 25.3px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 10.7px Courier; color: #000000; -webkit-text-stroke: #ff0000; min-height: 13.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 10.7px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 10.7px Courier; color: #000000; -webkit-text-stroke: #ff0000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 10.7px Monaco; color: #000000; -webkit-text-stroke: #ff0000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 12.0px; font: 10.7px 'Times New Roman'; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; -webkit-text-stroke: 0px #ff0000}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>SPSS Code for Data Analyses of F.Ex. Coding Data</b></span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1">** The following syntax allows complete analysis of all information contained in<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** three-digit F.Ex coding of behavior explanations.  I describe the most common<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** case in which each explainer provides multiple explanations for multiple<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** behaviors.  Simpler cases can be analyzed with some simplifications of the syntax.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The goal is to compute scores of important explanation parameters (e.g., how many</span></p>
+<p class="p3"><span class="s1">** reasons vs. causal history explanations; how many belief reasons vs. desire reasons;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** how many marked vs. unmarked belief reasons; how many person vs. situation<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** causes; how many dispositional vs. nondispositional person causes). Where ** possible,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** these parameters are orthogonal (e.g., how many belief reasons vs. desire reasons an<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** explainer provides is mathematically independent of how many reasons vs. causal<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** histories the explainer provides). <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The scores are typically computed as “how many per behavior explained.”   Thus,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** how many reasons an explainer provided is an average of the reason explanations the<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** person provided for each behavior in question.  The assumption is that the<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** experiment allowed for a reliable measurement of explanations by asking people to<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** explain multiple behaviors (considered multiple items on a “test”). <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** With some simplifications, the syntax below can also be used to analyze data for<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** individual behaviors explained or data that contain subsets of behaviors differing in<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** an important feature (e.g., two good behaviors vs. two bad behaviors, behaviors in<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** the actor vs. observer role).<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The data file has to be set up in such a way that, for each case (e.g., explainer), each<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** behavior explained is represented by multiple columns of three-digit F.Ex numbers<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** (see example below). <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Case1:</span></p>
+<p class="p3"><span class="s1">** b1.e1 | b1.e2  | b1.e3  | b1.e4  | b1.e5  | b2.e1  | b2.e2  | b2.e3  | b2.e4  | b2.e5 etc.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** How many F.Ex columns there are per behavior depends on the maximum number<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** of explanations any one or more explainers provided for that behavior.  For example,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** if some explainers provided five explanations for behavior1, then five columns of<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** F.Ex codes are set up for behavior1 for every case.  It is then recommended that all<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** other behaviors (let’s assume six) are also represented by five explanation columns. <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** In some cases, an individual explainer provided a very large number of explanations<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** for a single behavior (e.g., 13), far more than the next person (e.g., 5).  In this case, I<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** recommend that only the first five (or so) explanations are coded for the former<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** explainer.  The assumption is that those were the most important ones in the person’s<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** cognitive representation.  (Ideally, experimental design should limit the number of<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** explanations that explainers can provide per behavior to a reasonable number.)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The SPSS commands below use the COUNT command to count up explanations of a<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** certain kind (e.g., belief reasons) across the explanations of a given behavior; then<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** codes at multiple levels are formed (e.g., reasons, belief reasons, markers).   This<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** process is embedded in a DO REPEAT frame, which saves lots of space by defining<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** the various computations of F.Ex scores only once and then running them for each of<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** the six behaviors. <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** It’s irrelevant that some explainers provided fewer explanations for certain behaviors<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** or didn’t explain certain behaviors; those column entries are simply missing values<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** that are ignored during appropriate averaging.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">DO REPEAT</span></p>
+<p class="p3"><span class="s1"> e1 = b1.e1 b2.e1 b3.e1 b4.e1 b5.e1 b6.e1</span></p>
+<p class="p3"><span class="s1"> /e2 = b1.e2 b2.e2 b3.e2 b4.e2 b5.e2 b6.e2</span></p>
+<p class="p3"><span class="s1"> /e3 = b1.e3 b2.e3 b3.e3 b4.e3 b5.e3 b6.e3</span></p>
+<p class="p3"><span class="s1"> /e4 = b1.e4 b2.e4 b3.e4 b4.e4 b5.e4 b6.e4</span></p>
+<p class="p3"><span class="s1"> /e5 = b1.e5 b2.e5 b3.e5 b4.e5 b5.e5 b6.e5</span></p>
+<p class="p3"><span class="s1"> /s_per = s_per1 s_per2 s_per3 s_per4 s_per5 s_per6</span></p>
+<p class="p3"><span class="s1"> /s_ia = s_ia1 s_ia2 s_ia3 s_ia4 s_ia5 s_ia6</span></p>
+<p class="p3"><span class="s1"> /s_sit = s_sit1 s_sit2 s_sit3 s_sit4 s_sit5 s_sit6</span></p>
+<p class="p3"><span class="s1"> /s_trt = s_trt1 s_trt2 s_trt3 s_trt4 s_trt5 s_trt6</span></p>
+<p class="p3"><span class="s1"> /s_ntrt = s_ntrt1 s_ntrt2 s_ntrt3 s_ntrt4 s_ntrt5 s_ntrt6</span></p>
+<p class="p3"><span class="s1"> /cau_per = cau_per1 cau_per2 cau_per3 cau_per4 cau_per5 cau_per6</span></p>
+<p class="p3"><span class="s1"> /cau_ia = cau_ia1 cau_ia2 cau_ia3 cau_ia4 cau_ia5 cau_ia6</span></p>
+<p class="p3"><span class="s1"> /cau_sit = cau_sit1 cau_sit2 cau_sit3 cau_sit4 cau_sit5 cau_sit6</span></p>
+<p class="p3"><span class="s1"> /cau_trt = cau_trt1 cau_trt2 cau_trt3 cau_trt4 cau_trt5 cau_trt6</span></p>
+<p class="p3"><span class="s1"> /cau_ntrt = cau_ntrt1 cau_ntrt2 cau_ntrt3 cau_ntrt4 cau_ntrt5 cau_ntrt6</span></p>
+<p class="p3"><span class="s1"> /chr_per = chr_per1 chr_per2 chr_per3 chr_per4 chr_per5 chr_per6</span></p>
+<p class="p3"><span class="s1"> /chr_ia = chr_ia1 chr_ia2 chr_ia3 chr_ia4 chr_ia5 chr_ia6</span></p>
+<p class="p3"><span class="s1"> /chr_sit = chr_sit1 chr_sit2 chr_sit3 chr_sit4 chr_sit5 chr_sit6</span></p>
+<p class="p3"><span class="s1"> /chr_trt = chr_trt1 chr_trt2 chr_trt3 chr_trt4 chr_trt5 chr_trt6</span></p>
+<p class="p3"><span class="s1"> /chr_ntrt = chr_ntrt1 chr_ntrt2 chr_ntrt3 chr_ntrt4 chr_ntrt5 chr_ntrt6</span></p>
+<p class="p3"><span class="s1"> /md_per = md_per1 md_per2 md_per3 md_per4 md_per5 md_per6</span></p>
+<p class="p3"><span class="s1"> /mb_per = mb_per1 mb_per2 mb_per3 mb_per4 mb_per5 mb_per6</span></p>
+<p class="p3"><span class="s1"> /mv_per = mv_per1 mv_per2 mv_per3 mv_per4 mv_per5 mv_per6</span></p>
+<p class="p3"><span class="s1"> /ud_per = ud_per1 ud_per2 ud_per3 ud_per4 ud_per5 ud_per6</span></p>
+<p class="p3"><span class="s1"> /ub_per = ub_per1 ub_per2 ub_per3 ub_per4 ub_per5 ub_per6</span></p>
+<p class="p3"><span class="s1"> /uv_per = uv_per1 uv_per2 uv_per3 uv_per4 uv_per5 uv_per6</span></p>
+<p class="p3"><span class="s1"> /md_ia = md_ia1 md_ia2 md_ia3 md_ia4 md_ia5 md_ia6</span></p>
+<p class="p3"><span class="s1"> /mb_ia = mb_ia1 mb_ia2 mb_ia3 mb_ia4 mb_ia5 mb_ia6</span></p>
+<p class="p3"><span class="s1"> /mv_ia = mv_ia1 mv_ia2 mv_ia3 mv_ia4 mv_ia5 mv_ia6</span></p>
+<p class="p3"><span class="s1"> /ud_ia = ud_ia1 ud_ia2 ud_ia3 ud_ia4 ud_ia5 ud_ia6</span></p>
+<p class="p3"><span class="s1"> /ub_ia = ub_ia1 ub_ia2 ub_ia3 ub_ia4 ub_ia5 ub_ia6</span></p>
+<p class="p3"><span class="s1"> /uv_ia = uv_ia1 uv_ia2 uv_ia3 uv_ia4 uv_ia5 uv_ia6</span></p>
+<p class="p3"><span class="s1"> /md_sit= md_sit1 md_sit2 md_sit3 md_sit4 md_sit5 md_sit6</span></p>
+<p class="p3"><span class="s1"> /mb_sit= mb_sit1 mb_sit2 mb_sit3 mb_sit4 mb_sit5 mb_sit6</span></p>
+<p class="p3"><span class="s1"> /mv_sit= mv_sit1 mv_sit2 mv_sit3 mv_sit4 mv_sit5 mv_sit6</span></p>
+<p class="p3"><span class="s1"> /ud_sit= ud_sit1 ud_sit2 ud_sit3 ud_sit4 ud_sit5 ud_sit6</span></p>
+<p class="p3"><span class="s1"> /ub_sit= ub_sit1 ub_sit2 ub_sit3 ub_sit4 ub_sit5 ub_sit6</span></p>
+<p class="p3"><span class="s1"> /uv_sit= uv_sit1 uv_sit2 uv_sit3 uv_sit4 uv_sit5 uv_sit6</span></p>
+<p class="p3"><span class="s1"> /rea = rea1 rea2 rea3 rea4 rea5 rea6</span></p>
+<p class="p3"><span class="s1"> /int = int1 int2 int3 int4 int5 int6</span></p>
+<p class="p3"><span class="s1"> /chr = chr1 chr2 chr3 chr4 chr5 chr6</span></p>
+<p class="p3"><span class="s1"> /cau = cau1 cau2 cau3 cau4 cau5 cau6</span></p>
+<p class="p3"><span class="s1"> /d = d1 d2 d3 d4 d5 d6</span></p>
+<p class="p3"><span class="s1"> /b = b1 b2 b3 b4 b5 b6</span></p>
+<p class="p3"><span class="s1"> /v = v1 v2 v3 v4 v5 v6</span></p>
+<p class="p3"><span class="s1"> /md = md1 md2 md3 md4 md5 md6</span></p>
+<p class="p3"><span class="s1"> /mb = mb1 mb2 mb3 mb4 mb5 mb6</span></p>
+<p class="p3"><span class="s1"> /mv = mv1 mv2 mv3 mv4 mv5 mv6</span></p>
+<p class="p3"><span class="s1"> /ud = ud1 ud2 ud3 ud4 ud5 ud6</span></p>
+<p class="p3"><span class="s1"> /ub = ub1 ub2 ub3 ub4 ub5 ub6</span></p>
+<p class="p3"><span class="s1"> /uv = uv1 uv2 uv3 uv4 uv5 uv6</span></p>
+<p class="p3"><span class="s1"> /d_per = d_per1 d_per2 d_per3 d_per4 d_per5 d_per6</span></p>
+<p class="p3"><span class="s1"> /b_per = b_per1 b_per2 b_per3 b_per4 b_per5 b_per6</span></p>
+<p class="p3"><span class="s1"> /v_per = v_per1 v_per2 v_per3 v_per4 v_per5 v_per6</span></p>
+<p class="p3"><span class="s1"> /d_ia = d_ia1 d_ia2 d_ia3 d_ia4 d_ia5 d_ia6</span></p>
+<p class="p3"><span class="s1"> /b_ia = b_ia1 b_ia2 b_ia3 b_ia4 b_ia5 b_ia6</span></p>
+<p class="p3"><span class="s1"> /v_ia = v_ia1 v_ia2 v_ia3 v_ia4 v_ia5 v_ia6</span></p>
+<p class="p3"><span class="s1"> /d_sit = d_sit1 d_sit2 d_sit3 d_sit4 d_sit5 d_sit6</span></p>
+<p class="p3"><span class="s1"> /b_sit = b_sit1 b_sit2 b_sit3 b_sit4 b_sit5 b_sit6</span></p>
+<p class="p3"><span class="s1"> /v_sit = v_sit1 v_sit2 v_sit3 v_sit4 v_sit5 v_sit6</span></p>
+<p class="p3"><span class="s1"> /mr_per = mr_per1 mr_per2 mr_per3 mr_per4 mr_per5 mr_per6</span></p>
+<p class="p3"><span class="s1"> /ur_per = ur_per1 ur_per2 ur_per3 ur_per4 ur_per5 ur_per6</span></p>
+<p class="p3"><span class="s1"> /mr_ia = mr_ia1 mr_ia2 mr_ia3 mr_ia4 mr_ia5 mr_ia6</span></p>
+<p class="p3"><span class="s1"> /ur_ia = ur_ia1 ur_ia2 ur_ia3 ur_ia4 ur_ia5 ur_ia6</span></p>
+<p class="p3"><span class="s1"> /mr_sit = mr_sit1 mr_sit2 mr_sit3 mr_sit4 mr_sit5 mr_sit6</span></p>
+<p class="p3"><span class="s1"> /ur_sit = ur_sit1 ur_sit2 ur_sit3 ur_sit4 ur_sit5 ur_sit6</span></p>
+<p class="p3"><span class="s1"> /rea_per = rea_per1 rea_per2 rea_per3 rea_per4 rea_per5 rea_per6</span></p>
+<p class="p3"><span class="s1"> /rea_ia = rea_ia1 rea_ia2 rea_ia3 rea_ia4 rea_ia5 rea_ia6</span></p>
+<p class="p3"><span class="s1"> /rea_sit = rea_sit1 rea_sit2 rea_sit3 rea_sit4 rea_sit5 rea_sit6</span></p>
+<p class="p3"><span class="s1"> /m = m1 m2 m3 m4 m5 m6</span></p>
+<p class="p3"><span class="s1"> /u = u1 u2 u3 u4 u5 u6.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** These are the traditional (surface-based) person-situation codes, which are<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** computed across ALL explanation modes (reasons, causes, causal histories...)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT s_per = e1 e2 e3 e4 e5 (111, 112, 113, 114, 115, 116, 117, 118, 119,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> 211, 212, 213, 214, 215, 216, 217, 218, 219, 311, 312, 313, 321, 322, 323,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> 331, 332, 333, 341, 342, 343, 351, 352, 353, 361, 362, 363, 371, 372, 373, 411, 412, 413).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT s_ia = e1 e2 e3 e4 e5 (130, 150, 170, 131, 151, 171, 132, 152, 172, 133, 153,</span></p>
+<p class="p3"><span class="s1"> 173, 134, 154, 174, 135, 155, 175, 136, 156, 176, 137, 157, 177, 138, 158, 178, 139,</span></p>
+<p class="p3"><span class="s1"> 159, 179, 230, 250, 270, 231, 251, 271, 232, 252, 272, 233, 253, 273, 234, 254, 274,</span></p>
+<p class="p3"><span class="s1"> 235, 255, 275, 236, 256, 276, 237, 257, 277, 238, 258, 278, 239, 259, 279, 431, 451,</span></p>
+<p class="p3"><span class="s1"> 471, 432, 452, 472, 433, 453, 473).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT s_sit = e1 e2 e3 e4 e5 (120, 140, 141, 142, 143, 144, 145, 148, 149, 160, 220,</span></p>
+<p class="p3"><span class="s1"> 240, 241, 242, 243, 244, 245, 248, 249, 260, 421, 422, 423, 441, 442, 443, 461, 462, 463).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** All parameters with the suffix  _trt refer to the classic trait scores. We typically<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** focus on traits of one's personality or character (115, 119, 215, 219), but one could<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** be more inclusive and also add 217 scores into a broader "dispositional" parameter (117s<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** and 217s refer to beliefs, desires, valuings that have some temporal stability).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT s_trt = e1 e2 e3 e4 e5 (115, 119, 215, 219).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** If 117s and 217s are added to the  _trt parameter, they need to be removed from the _ntrt</span></p>
+<p class="p3"><span class="s1">** parameter, which refers to all other person causes that are not traits.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT s_ntrt = e1 e2 e3 e4 e5 (111, 112, 113, 114,116, 117, 118, 211, 212, 213, 214, 216, 217, 218).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">*** CAUSES (again, traditional scores of person, interaction, situation,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">*** trait, and nontrait)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT cau_per = e1 e2 e3 e4 e5 (111, 112, 113, 114, 115, 116, 117, 118, 119).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT cau_ia = e1 e2 e3 e4 e5 (130, 150, 170, 131, 151, 171, 132, 152, 172, 133, 153, 173, 134,</span></p>
+<p class="p3"><span class="s1"> 154, 174, 135, 155, 175, 136, 156, 176, 137, 157, 177, 138, 158, 178, 139, 159, 179).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT cau_sit = e1 e2 e3 e4 e5 (120, 140, 141, 142, 143, 144, 145, 148, 149, 160).<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT cau_trt = e1 e2 e3 e4 e5 (115, 119).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT cau_ntrt = e1 e2 e3 e4 e5 (111, 112, 113, 114, 116, 117, 118).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP cau = sum(cau_per, cau_ia, cau_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The following restrictions ensure that the presence or absence of<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** traits is COUNTed only when there actually was a person cause given –– it would<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** make no sense to COUNT zeros (no trait) if there wasn't the possibility for</span></p>
+<p class="p3"><span class="s1">** a disposition in the first place. In those cases, the parameter "trait" is<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** set to msissing value.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if cau_per = 0.</span></p>
+<p class="p3"><span class="s1">recode cau_trt cau_ntrt (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if cau = 0.</span></p>
+<p class="p3"><span class="s1">recode cau_per cau_ia cau_sit  (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">*** CAUSAL HISTORY OF REASON EXPLANATIONS (again, traditional scores of person,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">*** interaction, situation, Disposition, and nondisposition)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT chr_per = e1 e2 e3 e4 e5 (211, 212, 213, 214, 215, 216, 217, 218, 219).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT chr_ia = e1 e2 e3 e4 e5 (230, 250, 270, 231, 251, 271, 232, 252, 272, 233, 253, 273,</span></p>
+<p class="p3"><span class="s1"> 234, 254, 274, 235, 255, 275, 236, 156, 276, 237, 257, 277, 238, 258, 278, 239, 259, 279).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT chr_sit = e1 e2 e3 e4 e5 (220, 240, 241, 242, 243, 244, 245, 247, 249, 260).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT chr_trt = e1 e2 e3 e4 e5 (215, 219).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT chr_ntrt = e1 e2 e3 e4 e5 (211, 212, 213, 214, 216, 217, 218).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP chr = sum(chr_per, chr_ia, chr_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">*** Excluding invalid CHR scores</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if (chr_per = 0).</span></p>
+<p class="p3"><span class="s1">recode chr_trt chr_ntrt (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** All explanations of intentional behavior, both reasons and causal histories</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p4"><span class="s1">COUNT int = e1 e2 e3 e4 e5 (200 through 499).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if int = 0.</span></p>
+<p class="p3"><span class="s1">recode chr (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** REASONS<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** First are the "molecular" parameters: reasons of a certain type (e.g., desire) with a certain<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** content (e.g., agent) and present or absent mental state marker .</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT md_per = e1 e2 e3 e4 e5  (311).</span></p>
+<p class="p3"><span class="s1">COUNT mb_per = e1 e2 e3 e4 e5  (312).</span></p>
+<p class="p3"><span class="s1">COUNT mv_per = e1 e2 e3 e4 e5  (313).</span></p>
+<p class="p3"><span class="s1">COUNT ud_per = e1 e2 e3 e4 e5  (411).</span></p>
+<p class="p3"><span class="s1">COUNT ub_per = e1 e2 e3 e4 e5  (412).</span></p>
+<p class="p3"><span class="s1">COUNT uv_per = e1 e2 e3 e4 e5  (413).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT md_ia = e1 e2 e3 e4 e5 (331, 351, 371).</span></p>
+<p class="p3"><span class="s1">COUNT mb_ia = e1 e2 e3 e4 e5 (332, 352, 372).</span></p>
+<p class="p3"><span class="s1">COUNT mv_ia = e1 e2 e3 e4 e5 (333, 353, 373).</span></p>
+<p class="p3"><span class="s1">COUNT ud_ia = e1 e2 e3 e4 e5 (431, 451, 471).</span></p>
+<p class="p3"><span class="s1">COUNT ub_ia = e1 e2 e3 e4 e5 (432, 452, 472).</span></p>
+<p class="p3"><span class="s1">COUNT uv_ia = e1 e2 e3 e4 e5 (433, 453, 473).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COUNT md_sit = e1 e2 e3 e4 e5 (321, 341, 361).</span></p>
+<p class="p3"><span class="s1">COUNT mb_sit = e1 e2 e3 e4 e5 (322, 342, 362).</span></p>
+<p class="p3"><span class="s1">COUNT mv_sit = e1 e2 e3 e4 e5 (323, 343, 363).</span></p>
+<p class="p3"><span class="s1">COUNT ud_sit = e1 e2 e3 e4 e5 (421, 441, 461).</span></p>
+<p class="p3"><span class="s1">COUNT ub_sit = e1 e2 e3 e4 e5 (422, 442, 462).</span></p>
+<p class="p3"><span class="s1">COUNT uv_sit = e1 e2 e3 e4 e5 (423, 443, 463).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Creating overarching parameters</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP rea = sum (md_per, md_ia, md_sit, mb_per, mb_ia, mb_sit,</span></p>
+<p class="p3"><span class="s1"> mv_per, mv_ia, mv_sit, ud_per, ud_ia, ud_sit, ub_per, ub_ia, ub_sit,</span></p>
+<p class="p3"><span class="s1"> uv_per, uv_ia, uv_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP d = sum(md_per, md_ia, md_sit, ud_per, ud_ia, ud_sit).</span></p>
+<p class="p3"><span class="s1">COMP b = sum(mb_per, mb_ia, mb_sit, ub_per, ub_ia, ub_sit).</span></p>
+<p class="p3"><span class="s1">COMP v = sum(mv_per, mv_ia, mv_sit, uv_per, uv_ia, uv_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">* Excluding invalid codes and subcodes<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if (d = 0).</span></p>
+<p class="p3"><span class="s1">recode md_per, md_ia, md_sit, ud_per, ud_ia, ud_sit (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1">do if (b = 0).</span></p>
+<p class="p3"><span class="s1">recode mb_per, mb_ia, mb_sit, ub_per, ub_ia, ub_sit (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1">do if (v = 0).</span></p>
+<p class="p3"><span class="s1">recode mv_per, mv_ia, mv_sit, uv_per, uv_ia, uv_sit (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if (rea = 0).</span></p>
+<p class="p3"><span class="s1">recode md_per, md_ia, md_sit, mb_per, mb_ia, mb_sit, mv_per, mv_ia, mv_sit, ud_per, ud_ia,<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> ud_sit, ub_per, ub_ia, ub_sit, uv_per, uv_ia, uv_sit d b v (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">do if int = 0.</span></p>
+<p class="p3"><span class="s1">recode rea (0 = sysmis).</span></p>
+<p class="p3"><span class="s1">end if.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">*** Creating intermediate-level scores<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Marked or unmarked desires/beliefs/valuings (across contents).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP md = sum (md_per, md_ia, md_sit).</span></p>
+<p class="p3"><span class="s1">COMP mb = sum (mb_per, mb_ia, mb_sit).</span></p>
+<p class="p3"><span class="s1">COMP mv = sum (mv_per, mv_ia, mv_sit).</span></p>
+<p class="p3"><span class="s1">COMP ud = sum (ud_per, ud_ia, ud_sit).</span></p>
+<p class="p3"><span class="s1">COMP ub = sum (ub_per, ub_ia, ub_sit).</span></p>
+<p class="p3"><span class="s1">COMP uv = sum (uv_per, uv_ia, uv_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Desires/beliefs/valings for each content but irrespective of marked/unmarked.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP  d_per = sum( md_per, ud_per).</span></p>
+<p class="p3"><span class="s1">COMP  b_per = sum( mb_per, ub_per).</span></p>
+<p class="p3"><span class="s1">COMP  v_per = sum( mv_per, uv_per).</span></p>
+<p class="p3"><span class="s1">COMP  d_ia = sum( md_ia, ud_ia).</span></p>
+<p class="p3"><span class="s1">COMP  b_ia = sum( mb_ia, ub_ia).</span></p>
+<p class="p3"><span class="s1">COMP  v_ia = sum( mv_ia, uv_ia).</span></p>
+<p class="p3"><span class="s1">COMP d_sit = sum(md_sit,ud_sit).</span></p>
+<p class="p3"><span class="s1">COMP b_sit = sum(mb_sit,ub_sit).</span></p>
+<p class="p3"><span class="s1">COMP v_sit = sum(mv_sit,uv_sit).</span></p>
+<p class="p3"><span class="s1">        </span></p>
+<p class="p3"><span class="s1">** Marked/unmarked reasons with each content (across des/bel/val).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP  mr_per =  sum (md_per,  mb_per,  mv_per).</span></p>
+<p class="p3"><span class="s1">COMP  ur_per =  sum (ud_per,  ub_per,  uv_per).</span></p>
+<p class="p3"><span class="s1">COMP  mr_ia =  sum (md_ia,  mb_ia,  mv_ia).</span></p>
+<p class="p3"><span class="s1">COMP  ur_ia =  sum (ud_ia,  ub_ia,  uv_ia).</span></p>
+<p class="p3"><span class="s1">COMP mr_sit = sum (md_sit, mb_sit, mv_sit).</span></p>
+<p class="p3"><span class="s1">COMP ur_sit = sum (ud_sit, ub_sit, uv_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Preferred content across type and marker</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP  rea_per  = sum (d_per,  b_per,  v_per).</span></p>
+<p class="p3"><span class="s1">COMP  rea_ia  = sum (d_ia,  b_ia,  v_ia).</span></p>
+<p class="p3"><span class="s1">COMP rea_sit = sum (d_sit, b_sit, v_sit).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Overall use of markers (across type and content)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP m = sum (md, mb, mv).</span></p>
+<p class="p3"><span class="s1">COMP u = sum (ud, ub, uv).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">END REPEAT.</span></p>
+<p class="p3"><span class="s1">EXECUTE.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Appropriate averaging of counts to yield per-behavior scores comes next. <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** (For many analyses not all of these scores may be needed.)</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** NOTE: If for a given behavior a participant offered only<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP chr = mean(chr1, chr2, chr3, chr4, chr5, chr6).</span></p>
+<p class="p3"><span class="s1">COMP rea = mean(rea1, rea2, rea3, rea4, rea5, rea6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP d = mean(d1, d2, d3, d4, d5, d6).</span></p>
+<p class="p3"><span class="s1">COMP b = mean(b1, b2, b3, b4, b5, b6).</span></p>
+<p class="p3"><span class="s1">COMP v = mean(v1, v2, v3, v4, v5, v6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP md = mean(md1, md2, md3, md4, md5, md6).</span></p>
+<p class="p3"><span class="s1">COMP mb = mean(mb1, mb2, mb3, mb4, mb5, mb6).</span></p>
+<p class="p3"><span class="s1">COMP mv = mean(mv1, mv2, mv3, mv4, mv5, mv6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP ud = mean(ud1, ud2, ud3, ud4, ud5, ud6).</span></p>
+<p class="p3"><span class="s1">COMP ub = mean(ub1, ub2, ub3, ub4, ub5, ub6).</span></p>
+<p class="p3"><span class="s1">COMP uv = mean(uv1, uv2, uv3, uv4, uv5, uv6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP d_per = mean(d_per1, d_per2, d_per3, d_per4, d_per5, d_per6).</span></p>
+<p class="p3"><span class="s1">COMP b_per = mean(b_per1, b_per2, b_per3, b_per4, b_per5, b_per6).</span></p>
+<p class="p3"><span class="s1">COMP v_per = mean(v_per1, v_per2, v_per3, v_per4, v_per5, v_per6).</span></p>
+<p class="p3"><span class="s1">COMP d_ia = mean(d_ia1, d_ia2, d_ia3, d_ia4, d_ia5, d_ia6).</span></p>
+<p class="p3"><span class="s1">COMP b_ia = mean(b_ia1, b_ia2, b_ia3, b_ia4, b_ia5, b_ia6).</span></p>
+<p class="p3"><span class="s1">COMP v_ia = mean(v_ia1, v_ia2, v_ia3, v_ia4, v_ia5, v_ia6).</span></p>
+<p class="p3"><span class="s1">COMP d_sit = mean(d_sit1, d_sit2, d_sit3, d_sit4, d_sit5, d_sit6).</span></p>
+<p class="p3"><span class="s1">COMP b_sit = mean(b_sit1, b_sit2, b_sit3, b_sit4, b_sit5, b_sit6).</span></p>
+<p class="p3"><span class="s1">COMP v_sit = mean(v_sit1, v_sit2, v_sit3, v_sit4, v_sit5, v_sit6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p5"><span class="s1">COMP rea_per = mean(rea_per1, rea_per2, rea_per3, rea_per4, rea_per5, rea_per6).</span></p>
+<p class="p5"><span class="s1">COMP rea_ia = mean(rea_ia1, rea_ia2, rea_ia3, rea_ia4, rea_ia5, rea_ia6).</span></p>
+<p class="p5"><span class="s1">COMP rea_sit = mean(rea_sit1, rea_sit2, rea_sit3, rea_sit4,rea_sit5, rea_sit6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP s_per = mean(s_per1, s_per2, s_per3, s_per4, s_per5, s_per6).</span></p>
+<p class="p3"><span class="s1">COMP s_ia = mean(s_ia1, s_ia2, s_ia3, s_ia4, s_ia5, s_ia6).</span></p>
+<p class="p3"><span class="s1">COMP s_sit = mean(s_sit1, s_sit2, s_sit3, s_sit4, s_sit5, s_sit6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP cau_per = mean(cau_per1, cau_per2, cau_per3, cau_per4, cau_per5, cau_per6).</span></p>
+<p class="p3"><span class="s1">COMP cau_ia = mean(cau_ia1, cau_ia2, cau_ia3, cau_ia4, cau_ia5, cau_ia6).</span></p>
+<p class="p3"><span class="s1">COMP cau_sit = mean(cau_sit1, cau_sit2, cau_sit3, cau_sit4, cau_sit5, cau_sit6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP cau_trt = mean(cau_trt1, cau_trt2, cau_trt3, cau_trt4, cau_trt5, cau_trt6).</span></p>
+<p class="p3"><span class="s1">COMP cau_ntrt = mean(cau_ntrt1, cau_ntrt2, cau_ntrt3, cau_ntrt4, cau_ntrt5, cau_ntrt6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP chr_per = mean(chr_per1, chr_per2, chr_per3, chr_per4, chr_per5, chr_per6).</span></p>
+<p class="p3"><span class="s1">COMP chr_ia = mean(chr_ia1, chr_ia2, chr_ia3, chr_ia4, chr_ia5, chr_ia6).</span></p>
+<p class="p3"><span class="s1">COMP chr_sit = mean(chr_sit1, chr_sit2, chr_sit3, chr_sit4, chr_sit5, chr_sit6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">COMP chr_trt = mean(chr_trt1, chr_trt2, chr_trt3, chr_trt4, chr_trt5, chr_trt6).</span></p>
+<p class="p3"><span class="s1">COMP chr_ntrt = mean(chr_ntrt1, chr_ntrt2, chr_ntrt3, chr_ntrt4, chr_ntrt5, chr_ntrt6).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** The data can now be analyzed for each explanation parameter.  We typically run</span></p>
+<p class="p3"><span class="s1">** within-subject Anovas, contrasting reasons vs. causal histories, belief reasons<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** vs. desire reasons, etc. <span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">**     Because the scores have been coded independently, one can also choose to<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** analyze the parameters as bundles of correlated multivariate dependent variables</span></p>
+<p class="p3"><span class="s1">** (e.g., the pair of rea, chr; or the triplet of d, b, v).  However, the interpretation<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** differs. The multivariate main effect (e.g., between two groups) of the reason type<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** set of d, b, v shows that the two groups differ in reasons, and the discriminant function</span></p>
+<p class="p3"><span class="s1">** coefficients for each reason type shows how much each contributes to this group difference.</span></p>
+<p class="p3"><span class="s1">** The multivariate main effect of the rea, chr set shows that the two groups differ in</span></p>
+<p class="p3"><span class="s1">** overall number of explanations, and the discriminant function coefficients show whether<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** reasons or causal histories more strongly contribute to this group difference.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova chr rea by COND(1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = rea_chr(2)</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize) .</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** For the reason type analyses (3-level w/s factor), we choose a pair of<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** orthogonal contrasts, (1) desire vs. belief and (2) desire/belief vs. valuing.  In</span></p>
+<p class="p3"><span class="s1">** SPSS, this contrast is called a "difference contrast," hence the /contr subcommand diff</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova d b v  by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = reatype(3)</span></p>
+<p class="p3"><span class="s1"> /contr (reatype) = diff</span></p>
+<p class="p3"><span class="s1"> /rename = intercept des_bel db_val</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ) .</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova ub mb by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = marked_bel(2)</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ) .</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** We typically don't examine the difference between marked and unmarked _desire_ reasons,</span></p>
+<p class="p3"><span class="s1">** but there may of course be occasions in which one would (e.g., in an exploratory study<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** or when examining self-focus or mind focus).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova ud md by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = marked_des(2)</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ) .</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Below are a variety of test of the class person-situation distinction, with<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** interactions coded separately to get the cleanest possible difference.  The</span></p>
+<p class="p3"><span class="s1">** appropriate contrast is therefore again an orthogonal difference pair: person vs.</span></p>
+<p class="p3"><span class="s1">** situation and person/situation vs. interaction.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** This first one treats all explanations as part of the same "universe" and simply<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** assesses whether the explainer mentions primarily the person, the situation, or<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">** an interaction. The subsequent ones test more specific person-situation differences,</span></p>
+<p class="p3"><span class="s1">** namely for causal history explanations, cause explanations (of unintentional behavior),</span></p>
+<p class="p3"><span class="s1">** and reason contents.</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova  s_per s_sit s_ia by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = surface(3)<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> /contr(</span><span class="s2">surface</span><span class="s1">) = diff</span></p>
+<p class="p3"><span class="s1"> /rename = intercep sit_per ps_ia</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova chr_per chr_sit chr_ia by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = causes(3)<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> /contr(causes) = diff</span></p>
+<p class="p3"><span class="s1"> /rename = intercep sit_per ps_ia</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova cau_per cau_sit cau_ia by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = causes(3)<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> /contr(causes) = diff</span></p>
+<p class="p3"><span class="s1"> /rename = intercep sit_per ps_ia</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova  rea_per rea_sit rea_ia by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = reacont(3)<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"> /contr(reacont) = diff</span></p>
+<p class="p3"><span class="s1"> /rename = intercep sit_per ps_ia</span></p>
+<p class="p3"><span class="s1"> /print = transform omeans signif(efsize, univ).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">** Finally, two tests examine the contrast between traits vs. nontraits</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova s_trt s_ntrt  by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = traits (2)</span></p>
+<p class="p3"><span class="s1"> /print =  omeans signif(efsize).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova cau_trt cau_ntrt  by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = traits (2)</span></p>
+<p class="p3"><span class="s1"> /print =  omeans signif(efsize).</span></p>
+<p class="p3"><span class="s1"> </span></p>
+<p class="p3"><span class="s1">manova chr_trt chr_ntrt  by Cond( 1,2)</span></p>
+<p class="p3"><span class="s1"> /wsfact = traits (2)</span></p>
+<p class="p3"><span class="s1"> /print =  omeans signif(efsize).</span></p>
+<p class="p6"><span class="s1"> </span></p>
+</body>
+</html>

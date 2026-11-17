@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+				$(".less").hide();
+				$(".info").hide();
+			})
+		$(document).ready(function(){
+			$(".more").click(function(){
+				$(".info").slideUp("fast");
+				$(".less").hide();
+				$(".more").show();
+				$(this).hide();
+
+				$this = $(this).attr("id");
+				$(".less#" + $this).show();
+				$(".info#" + $this).slideDown();
+			})
+		})
+		$(document).ready(function(){
+			$(".less").click(function(){
+				$(".less").hide();
+				$(".more").show();
+				$(".info").slideUp();
+			})
+		})
+	</script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Personnel | Malle Lab</title>
+	<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+	<div class="back">
+		<div class="leftcol">
+			<div class="leftfloat" style="height:150px; background-color:blue">&nbsp;</div>
+			<div class="leftfloat" style="height:220px; background-color:white">&nbsp;</div>
+			<div class="leftfloat" style="height:300px; background-color:yellow">&nbsp;</div>
+			<div class="leftfloatbottom" style="height:85px; background-color:white">&nbsp;</div>
+
+		</div>
+
+		<div class="rightcol">
+			<div class="header">
+				<p><a href="../index.html"><b>Social Cognitive Science Research Lab</b></a> | <a href="http://www.brown.edu">Brown University</a></p>
+			</div>
+
+			<div class="header2">
+				<div class="nav"><a href="personnel.html" class="current">Personnel</a></div>
+				<div class="nav"><a href="../Projects/projects_new.html" class="nav">Projects</a></div>
+				<div class="nav"><a href="../Publications/publications.html" class="nav">Publications</a></div>
+			</div>
+
+
+			<div class="body">
+				<div class="person">
+					<img src="photos/BFMweb.jpg" alt="photo" width="125" border="0" />
+					<b>Bertram Malle</b><br />Principal Investigator<br>
+						<a href="BFM.html">(website)</a>
+					    <a href="#" class="more" id="Malle">(show more)</a>
+					    <a href="#" class="less" id="Malle">(show less)</a>
+
+				</div>
+
+
+
+					<div class="info" id="Malle">
+					<b>Bertram Malle</b><br><br>
+					Bertram F. Malle was born in Graz, Austria, and studied psychology, philosophy, and linguistics at the University of Graz. After receiving his Master’s degrees in psychology and philosophy, he entered graduate school in psychology in the United States in 1990. Malle received his Ph.D. at Stanford University in 1995 and joined the faculty of the University of Oregon the same year. During his tenure at the University of Oregon, Dr. Malle also served as the Director of the Institute of Cognitive and Decision Sciences (2001-2007).</div>
+
+
+
+				<div class="person1">
+					<img src="photos/daniel_ullman_2015.jpg" height="135" width ="135" alt="Danny Ullman" />
+					<b>Danny Ullman</b><br /> Ph.D. Student<br>
+					</div>
+
+			
+					<div class="person1">
+					<img src="photos/Malik2.JPG" height="135" alt="Malik Boykin" />
+					<b>Malik Boykin</b><br /> Collaborator</a><br>
+					<a href="https://www.brown.edu/academics/cognitive-linguistic-psychological-sciences/people/faculty/malik-boykin">
+					(website)</a>
+				</div>
+
+				
+				<div class="person">
+					<img src="photos/Boyoung.jpg" width="110" alt="Boyoung Kim" />
+					<b>Boyoung Kim</b><br /> Collaborator<br>
+					<a href="#" class="more" id="Kim">(show more)</a>
+					<a href="#" class="less" id="Kim">(show less)</a>
+				</div>
+				
+					<div class="info" id="Kim">
+					<b>Boyoung Kim</b><br><br>
+					Boyoung Kim is curious about why people become interested in other minds and how they understand other minds.  Her research interest also includes how people make moral judgments. <br><br>
+					She received a B.A. in Psychology and a M.S. in Cognitive Psychology from Korea University in South Korea. Her master’s thesis was on selective attention.<br><br>
+					She is fascinated by how the world can be seen differently depending on minds.
+					</div>
+				
+
+
+
+				<!--  <div class="person1">
+					<img src="photos/daniel_ullman_2015.jpg" height="135" width ="135" alt="Danny Ullman" />
+					<b>Danny Ullman</b><br /> Ph.D. Student</a><br>
+				</div>
+			-->
+
+				<div class="person1">
+					 <img src="photos/Vincent_Rice.JPG" height="135" alt="Vincent Rice" />
+					 <b>Vincent Rice</b><br /> Lab Manager</a><br>
+				</div>
+		
+				
+
+				<div class="person1">
+					 <img src="photos/Salomi2.jpg" height="135" alt="Salomi Aladia" />
+					 <b>Salomi Aladia</b><br /> Collaborator</a><br>
+				</div>
+
+
+				<div class="person1">
+					<img src="photos/maya_cratsley.jpeg" alt="photo"  height="135" border="0" />
+					<b>Maya Cratsley</b><br /> Collaborator<br>
+				</div>
+
+				<div class="person1">
+					<img src="photos/Faustine.jpeg" alt="photo" height="135" border="0" />
+					<b>Faustine Corbani</b><br /> Collaborator<br>
+				</div>
+
+				<div class="person">
+					<img src="photos/maartje.jpg" alt="photo" height="133" border="0" />
+					<b>Maartje de Graaf</b><br />Collaborator<br>
+					<a href="https://robonarratives.wordpress.com/">(website)</a>
+					<a href="#" class="more" id="Maartje">(show more)</a>
+					<a href="#" class="less" id="Maartje">(show less)</a>
+				</div>
+				
+			<div class="info" id="Maartje">
+					<b>Maartje de Graaf</b><br><br>
+					Maartje a social scientist in the multi-disciplinary field of human-robot interaction. Her research is motivated by her intrinsic drive to understand human behavior and its underlying psychological and cognitive processes. Her past research indicates a strong impact of human-robot relationships in the emergence of long-term acceptance of socially interactive technologies. Envisioning a future in which the social abilities of robots can only increase, her research interest focuses on the social, emotional and cognitive responses from users to robots including the societal and ethical consequences of those responses. The end goal is to influence technology design and policy direction to pursue the development of responsible robots.
+					She has joined Brown’s Humanity Centered Robotics Initiative with a Rubicon grant from the Netherlands Organization for Scientific Research (NWO). The research project aims to investigate the underlying psychological and cognitive processes of how people explain both human and robot behavior.
+					Before starting at Brown University, Maartje was a postdoctoral researcher at the Department of Communication Science at the University of Twente, The Netherlands. Maartje has a Bachelor of Business Administration in Communication Management (2005), a Master of Science in Communication Studies (2011), and a PhD in Human-Robot Interaction (2015).
+						</div> 
+
+					<div class="person1">
+					<img src="photos/Beth2016.jpg" alt="photo" height="133" border="0" />
+					<b>Elizabeth Phillips</b><br />Collaborator<br>
+					<a href="https://www.elizabethkphillips.com">(website)</a>					  
+					<a href="#" class="more" id="Beth">(show more)</a>
+					<a href="#" class="less" id="Beth">(show less)</a>
+				</div>
+						<div class="info" id="Beth">
+					<b>Elizabeth “Beth” Phillips</b><br><br>
+					Beth Phillips earned her Ph.D. in 2016 in Applied Experimental and Human Factors Psychology at the University of Central Florida. Prior to joining the HCRI, she worked with the Robotics Collaborative Technology Alliance, a multidisciplinary research consortium working towards the development of future human-robot teams. Beth has an interest in how robots and other technologies are changing the way we interact with the world and one another, including the role that robots will play in providing companionship for humans in the near future. Her research focuses on the application of psychological principles to support the development of robotic systems that can work as partners, assistants, and companions for people. 
+						</div>
+						
+		<div class="person">
+					<img src="photos/Xuan_Zhao_photo.png" width="106" height="133" alt="xuan Zhao" />
+					<b>Xuan Zhao</b><br />Collaborator<br>
+					<a href="http://xuanzhao-psych.weebly.com">(website)</a>
+					<a href="#" class="more" id="Zhao">(show more)</a>
+					<a href="#" class="less" id="Zhao">(show less)</a>
+				</div>
+
+
+					<div class="info" id="Zhao">
+					<b>Xuan Zhao</b><br><br>
+					As a postdoctoral researcher at the University of Chicago Booth School of Business, my research investigates two related themes: 
+					<strong>How do we perceive and interact with other people? And how do we perceive and interact with robots and artificial intelligence?</strong><br><br>
+
+					My first line of research highlights the simple yet often overlooked fact that people hold different perspectives—that is, others may often perceive and conceive of the world differently than we do. In a series of projects, I highlight such perspective gaps and explore conditions that facilitate perspective taking, prosocial behaviors, and conversations about conflicting viewpoints. Given that people also attribute "minds" to robots and take their "perspectives," my second line of research examines people’s perception of and interaction with human-like robots. Through this work, I strive to reveal what makes humans human in light of the emergence of social robots.<br><br>
+
+					I received my PhD in Social Psychology at Brown University, where I worked with Bertram Malle. During graduate school, I also visited the Graduate School of Business and the Department of Psychology at Stanford University. Before coming to Brown, I received my B.Sc. with first-class honors from Chu Kochen College, Zhejiang University and traveled around the world on Semester At Sea. </div>
+		
+	
+					
+		
+
+				<div class="person">
+					<img src="photos/stuti2016.jpeg" height="135" alt="Stuti Thapa Magar" />
+					<b>Stuti Thapa Magar</b><br /> Collaborator</a><br>
+					<a href="https://www.researchgate.net/profile/Stuti_Thapa">(website)</a>
+				</div>
+					
+				<div class="person1">	
+					<img src="photos/joanna2016.png" alt="photo" height="133" border="0" />
+					<b>Joanna Korman</b><br />Collaborator<br>
+					<a href="https://joanna-korman.squarespace.com/home/">(website)</a>
+					<a href="#" class="more" id="Korman">(show more)</a>
+					<a href="#" class="less" id="Korman">(show less)</a>
+				</div>
+				<div class="person1">
+					<img src="photos/Corey2016.jpeg" width="133.1" height="133" alt="Corey Cusimano" />
+					<b>Corey Cusimano</b><br /> Collaborator<br>
+					<a href="http://coreycusimano.net/index.html">(website)</a>
+				</div>
+
+				<div class="person1">
+					<img src="photos/sg2.jpg" width="115" height="136" />
+					<b>Steve Guglielmo</b><br />Collaborator <br>
+					<a href="http://www.macalester.edu/~sgugliel/">(website)</a>
+					<a href="#" class="more" id="Guglielmo">(show more)</a>
+					<a href="#" class="less" id="Guglielmo">(show less)</a>
+				</div>
+					
+					<div class="info" id="Ullman">
+					<b>Danny Ullman</b><br><br>
+						</div> 
+
+					<div class="info" id="Thapa Magar">
+					<b>Stuti Thapa Magar</b><br><br>
+						</div>
+
+					<div class="info" id="Korman">
+					<b>Joanna Korman</b><br><br>
+					Joanna studies the concepts that make up the theory of mind (ToM) capacity (beliefs, desires, and intentions) and their role in social inferences and behavior explanations.  Specifically, she examines how information available in the mind and world affords social inferences that are rich in content and truly "productive" in nature.  She is also interested in what the study of these processes in autism spectrum disorders can reveal about the specific nature of ToM deficits in ASD.<br><br>
+
+					She completed her B.A. at Williams College in 2007, and her Sc.M. in psychology at Brown in 2011.  She also holds an M.Phil. in History and Philosophy of Science from the University of Cambridge, where she studied the philosophical underpinnings of human "folk psychology" with Martin Kusch.<br><br>
+
+					In her spare time she enjoys singing in foreign languages, large bodies of water, and hanging out with her cat, Yitze.
+						</div>
+					
+					<div class="info" id="Cusimano">
+					<b>Corey Cusimano</b><br><br>
+					
+						</div>
+
+					<div class="info" id="Guglielmo">
+					<b>Steve Guglielmo</b><br><br>
+					Steve is a Lecturer in the Department of Psychology and the Program in Cognitive Science at Yale University. He received his Ph.D. in Social Psychology in 2012 from Brown University, where he worked with Bertram Malle in the Social Cognitive Science lab.<br><br>
+
+					His research investigates how people's moral judgments (e.g., blame and praise) are guided by mental-state information, and it examines the parallels and asymmetries between people's moral judgments about negative vs. positive behavior.
+						</div>
+
+
+				<div class="person1">
+					<img src="photos/Andrew_Monroe.jpg" alt="photo" width="101" height="133" border="0" />
+					<b>Andrew Monroe</b><br /> Collaborator<br>
+					   	<a href="http://www.appstate.edu/~monroeae1/">(website)</a>
+						<a href="#" class="more" id="Monroe">(show more)</a>
+					    <a href="#" class="less" id="Monroe">(show less)</a>
+				</div>
+
+				<div class="person">
+					<img src="photos/voiklis.jpg" alt="photo" width="100" height="133" border="0" />
+					<b>John Voiklis</b><br /> Collaborator<br>
+					<a href="#" class="more" id="Voiklis">(show more)</a>
+					<a href="#" class="less" id="Voiklis">(show less)</a>
+				</div>
+					
+				<div class="person">
+					<img src="photos/emorie_beck.jpg" alt="photo" height="133" border="0" />
+					<b>Emorie Beck</b><br /> Collaborator<br>
+					<a href="https://emoriebeck.github.io/home/">(website)</a>
+				</div>
+
+				<div class="person1">
+					<img src="photos/Julia2015.jpg" alt="photo" height="133" border="0" />
+					<b>Julia Franckh</b><br /> Collaborator<br>
+				</div>
+
+				<div class="person1">
+					<img src="photos/jenny_fu.jpeg" alt="photo" height="133" border="0" />
+					<b>Jenny Fu</b><br /> Collaborator<br>
+				</div>
+
+				<div class="person1">
+					<img src="photos/Iman_Iqbal.jpeg" alt="photo" height="133" border="0" />
+					<b>Iman Iqbal</b><br /> Collaborator<br>
+				</div>
+
+				<div class="person1">
+					<img src="photos/liora_morhayim.jpg" alt="photo" height="133" border="0" />
+					<b>Liora Morhayim</b><br /> Collaborator<br>
+				</div>
+
+				
+
+				<div class="info" id="Monroe">
+					<b>Andrew Monroe</b><br><br>
+					Andrew Monroe is currently a Post-Doctoral Fellow at Florida State University working with Roy Baumeister.  He earned his PhD in Social Psychology at Brown University in 2012.  His research focuses on the social-cognitive process of inferring the minds of others and how such inferences guide moral judgment, person peception, free will beliefs, and prejudice.
+						</div>
+
+				<div class="info" id="Voiklis">
+					<b>John Voiklis</b><br><br>
+					John Voiklis studied at Columbia University (Ph.D. Educational Psychology; MFA Poetry) and The Ohio State University (B.A. English).  His previous research has examined the cognitive, interpersonal, and strategic aspects of how people coordinate their beliefs as they coordinate their actions.  John  joins the efforts at SCS to better understand the interplay of moral and emotional processes with an eye towards informing the design of morally competent robots.  He also serves on the Board of Advisors for the entertainment "think tank," Harmony Institute, where he recently conducted a text-mining study on the "moral color" of scripted dialogue on network television (http://harmony-institute.org/therippleeffect/author/John/).
+				       </div>
+
+				 <div class="RA">
+					<div style="overflow:auto; height:130px; font-size: 14px; text-align: left; margin: 10px; width: 100%;">
+						Xiyu Jenny Fu<br />
+						Liora Morhayim<br />
+						Geo Lee<br />
+						Faustine Corbani<br />
+						Maya Cratsley<br />
+					</div>
+				<b>Research Assistant</b>
+				</div>
+
+			
+
+				<div class="alumni">
+					<div style="overflow:auto; height:130px; font-size: 14px; text-align: left; margin: 10px; width: 100%;">
+						Maya Menefee<br />
+						Matthew Dang<br />
+						Nina Diepenbrock<br />
+						Dominique Moore<br />
+						Rachel Burrell <br />
+						Henna Herranen<br />
+						Broderick Allan <br />
+						Mandana Ali<br />
+						Fue Vue<br />
+						Madeline DiGiovanni <br />
+						Peter Tun<br />
+						Elvina Zhang <br />
+						Baxter DiFabrizio <br />
+						Mohamad Mowafak Allaham <br />
+						Yoed Kenett <br />
+						Aneelah Afzali<br />
+						Sebrina Anderson (M.A., 2006)<br />
+						Misty Auld<br />
+						Ruth Bennett<BR />
+						Gabe Bodzin<br />
+						Richard Bresnahan (Honors Thesis, 2010)<br />
+						Tobiah Brown<br />
+						Megan Campbell<br />
+						Amity Clausen<br />
+						Jonathan Cook<br />
+						Athena Corenbaum<br />
+						Shannon Courtney Pawol<br />
+						Stephan Dickert<br />
+						Kyle Dillon (Honors, 2010; M.S., 2011)<br />
+						Cydney Dupree (Honors Thesis, 2011)<br />
+						Eric Edmondson<br />
+						Chaz Firestone<br />
+						Katherine Flaschen (Honors Thesis, 2011)<br />
+						Michelle Frank<br />
+						Jenni Freeman (Honors Thesis, 1998)<BR />
+					  	Lisa Gaumond<br />
+					  	Kenifer Gibbs<br />
+					  	Phil Getyy<br />
+						Andrew Graham Shipley (Honors Thesis, 2006)<br />
+						Dennis Gu <br />
+						Ariane Haase (M.A., 2008)<br />
+						SolAh Han<br />
+						Omar Haque<br />
+						Adam Heifetz<br />
+						Krista Heim (Honors Thesis, 2005)<br />
+						Kerri Hoagland<br />
+						Jess Holbrook (Ph.D., 2006)<br />
+						Jessica Hollingsworth<br />
+					  	Aabra Jaggard <br />
+						Fan Jiang<br />
+						Johanna Jokela<br />
+						Julia Kantor <br />
+						Joshua Knobe <br />
+						John Knorek<br />
+						Angela Laurita (Honors Thesis, 1999)<br />
+						Dorothy Lee Batten<br />
+						Nicole Lee Selinger<br />
+						Tiffany Lee<br />
+						Sock Ling Tok<br />
+						Lach Litwer<br />
+						Donovan Long<br />
+						Brad Lytle (Honors Thesis, 2002)<br />
+						Kristen Mac Connell (Honors Thesis, 1996)<br />
+						Katie MacCionnaith (Honors Thesis, 2003)<br />
+						Ezra Markowitz<br />
+						Brad Maron<br />
+						Michelle Moore<br />
+						Nigil Murrell<br />
+						Sarah Nelson (Ph.D., 2003)<br />
+						Lianne Nichole Kelley<br />
+						Matthew O'Laughlin (Ph.D., 2001)<br />
+						Holly Oh <br />
+						Gale Pearce (Ph.D., 2003)<br />
+						Tiffany Phu <br />
+						Melvin Pusateri (M.A., 1999)<br />
+						Scarlet Rappl<br />
+						Lisa Sheridan<br />
+						Jessica Smith<br>
+						Dahlia Spektor (Honors Thesis, 1998)<br />
+						Susanna Spektor (Honors Thesis, 1997)<br />
+						Samuel Stevens<br />
+						Wenying Sun<br>
+						Zhongqiang Sun<br>
+						Sallie Tak<br />
+						Chuck Tate (Ph.D., 2006)<br />
+						Jessica Tipsord (Ph.D., 2009)<br />
+						Heather Trammell<br />
+						Cara Tsoi (Honors Thesis, 1998)<br />
+						Mina Whangbo <br />
+						Suzy Weiss<br>
+						Megan Wenzel<br>
+						Tim Wilson<br />
+						Andrea Wulf<br />
+						Victoria Yang<br />
+						Jasmine Yeo<br />
+						Julia Zuroff<br>
+					</div>
+				<b>Alumni</b>
+				</div>
+
+			</div>
+
+			<div class="footer">&nbsp;</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

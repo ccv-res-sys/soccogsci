@@ -1,0 +1,2610 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="SPSS%20Code%20for%20FEx%20analyses_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Bertram Malle</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Bertram Malle</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2009-02-15T23:38:00Z</o:Created>
+  <o:LastSaved>2009-02-15T23:38:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>2919</o:Words>
+  <o:Characters>16641</o:Characters>
+  <o:Company>University of Oregon</o:Company>
+  <o:Lines>138</o:Lines>
+  <o:Paragraphs>33</o:Paragraphs>
+  <o:CharactersWithSpaces>20436</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayBackgroundShape/>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>9.35 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>9.35 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:UseNormalStyleForList/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:DontGrowAutofit/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Monaco;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:200%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:200%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:normal;
+	mso-bidi-font-weight:bold;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	text-align:center;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:22.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:22.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-align:center;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:22.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	text-align:center;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:22.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Monaco;
+	mso-fareast-font-family:Cambria;
+	mso-hansi-font-family:Monaco;
+	mso-bidi-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:bold;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.red
+	{mso-style-name:red;
+	color:red;}
+span.grey
+	{mso-style-name:grey;
+	color:gray;}
+span.black
+	{mso-style-name:"b\(l\)ack";
+	mso-style-parent:"";
+	color:windowtext;}
+span.green
+	{mso-style-name:green;
+	mso-style-parent:"";
+	color:green;}
+span.blue
+	{mso-style-name:blue;
+	mso-style-parent:"";
+	color:blue;}
+span.wavy
+	{mso-style-name:wavy;
+	mso-style-parent:"";
+	text-underline:maroon;
+	text-decoration:underline;
+	text-underline:wave;}
+p.BookChap, li.BookChap, div.BookChap
+	{mso-style-name:BookChap;
+	mso-style-parent:"Heading 1";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 1.0pt 0in;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:16.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-locked:yes;
+	mso-style-link:"Plain Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:Monaco;
+	mso-ascii-font-family:Monaco;
+	mso-hansi-font-family:Monaco;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-hansi-font-family:Cambria;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-bottom:21.0pt;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:28.0pt;mso-bidi-font-size:
+32.0pt;font-family:Times;mso-bidi-font-family:Times'>SPSS Code for Data
+Analyses of F.Ex. Coding Data<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The following syntax
+allows complete analysis of all information contained in <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** three-digit F.Ex coding of
+behavior explanations.<span style="mso-spacerun: yes">&nbsp; </span>I describe
+the most common <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** case in which each
+explainer provides multiple explanations for multiple <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** behaviors.<span
+style="mso-spacerun: yes">&nbsp; </span>Simpler cases can be analyzed with some
+simplifications of the syntax. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The goal is to compute
+scores of important explanation parameters (e.g., how many<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** reasons vs. causal history
+explanations; how many belief reasons vs. desire reasons; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** how many marked vs.
+unmarked belief reasons; how many person vs. situation <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** causes; how many
+dispositional vs. nondispositional person causes). Where ** possible, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** these parameters are
+orthogonal (e.g., how many belief reasons vs. desire reasons an <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** explainer provides is
+mathematically independent of how many reasons vs. causal <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** histories the explainer
+provides).<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The scores are typically
+computed as “how many per behavior explained.”<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>Thus, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** how many reasons an
+explainer provided is an average of the reason explanations the <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** person provided for each
+behavior in question.<span style="mso-spacerun: yes">&nbsp; </span>The
+assumption is that the <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** experiment allowed for a
+reliable measurement of explanations by asking people to <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** explain multiple behaviors
+(considered multiple items on a “test”).<span style="mso-spacerun: yes">&nbsp;
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** With some simplifications,
+the syntax below can also be used to analyze data for <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** individual behaviors
+explained or data that contain subsets of behaviors differing in <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** an important feature
+(e.g., two good behaviors vs. two bad behaviors, behaviors in <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** the actor vs. observer
+role). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The data file has to be
+set up in such a way that, for each case (e.g., explainer), each <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** behavior explained is
+represented by multiple columns of three-digit F.Ex numbers <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** (see example below).<span
+style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Case1:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** b1.e1 | b1.e2<span
+style="mso-spacerun: yes">&nbsp; </span>| b1.e3<span style="mso-spacerun:
+yes">&nbsp; </span>| b1.e4<span style="mso-spacerun: yes">&nbsp; </span>|
+b1.e5<span style="mso-spacerun: yes">&nbsp; </span>| b2.e1<span
+style="mso-spacerun: yes">&nbsp; </span>| b2.e2<span style="mso-spacerun:
+yes">&nbsp; </span>| b2.e3<span style="mso-spacerun: yes">&nbsp; </span>|
+b2.e4<span style="mso-spacerun: yes">&nbsp; </span>| b2.e5 etc. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** How many F.Ex columns
+there are per behavior depends on the maximum number <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** of explanations any one or
+more explainers provided for that behavior.<span style="mso-spacerun:
+yes">&nbsp; </span>For example, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** if some explainers
+provided five explanations for behavior1, then five columns of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** F.Ex codes are set up for
+behavior1 for every case.<span style="mso-spacerun: yes">&nbsp; </span>It is
+then recommended that all <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** other behaviors (let’s
+assume six) are also represented by five explanation columns.<span
+style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** In some cases, an
+individual explainer provided a very large number of explanations <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** for a single behavior
+(e.g., 13), far more than the next person (e.g., 5).<span style="mso-spacerun:
+yes">&nbsp; </span>In this case, I <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** recommend that only the
+first five (or so) explanations are coded for the former <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** explainer.<span
+style="mso-spacerun: yes">&nbsp; </span>The assumption is that those were the most
+important ones in the person’s <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** cognitive
+representation.<span style="mso-spacerun: yes">&nbsp; </span>(Ideally,
+experimental design should limit the number of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** explanations that
+explainers can provide per behavior to a reasonable number.)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The SPSS commands below
+use the COUNT command to count up explanations of a <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** certain kind (e.g., belief
+reasons) across the explanations of a given behavior; then <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** codes at multiple levels
+are formed (e.g., reasons, belief reasons, markers).<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>This <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** process is embedded in a
+DO REPEAT frame, which saves lots of space by defining <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** the various computations
+of F.Ex scores only once and then running them for each of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** the six behaviors.<span
+style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** It’s irrelevant that some
+explainers provided fewer explanations for certain behaviors <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** or didn’t explain certain
+behaviors; those column entries are simply missing values <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** that are ignored during
+appropriate averaging.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>DO REPEAT<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>e1 = b1.e1 b2.e1 b3.e1 b4.e1 b5.e1 b6.e1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/e2 = b1.e2 b2.e2 b3.e2 b4.e2 b5.e2 b6.e2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/e3 = b1.e3 b2.e3 b3.e3 b4.e3 b5.e3 b6.e3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/e4 = b1.e4 b2.e4 b3.e4 b4.e4 b5.e4 b6.e4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/e5 = b1.e5 b2.e5 b3.e5 b4.e5 b5.e5 b6.e5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/s_per = s_per1 s_per2 s_per3 s_per4 s_per5 s_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/s_ia = s_ia1 s_ia2 s_ia3 s_ia4 s_ia5 s_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/s_sit = s_sit1 s_sit2 s_sit3 s_sit4 s_sit5 s_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/s_trt = s_trt1 s_trt2 s_trt3 s_trt4 s_trt5 s_trt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/s_ntrt = s_ntrt1 s_ntrt2 s_ntrt3 s_ntrt4 s_ntrt5 s_ntrt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau_per = cau_per1 cau_per2 cau_per3 cau_per4 cau_per5
+cau_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau_ia = cau_ia1 cau_ia2 cau_ia3 cau_ia4 cau_ia5 cau_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau_sit = cau_sit1 cau_sit2 cau_sit3 cau_sit4 cau_sit5
+cau_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau_trt = cau_trt1 cau_trt2 cau_trt3 cau_trt4 cau_trt5
+cau_trt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau_ntrt = cau_ntrt1 cau_ntrt2 cau_ntrt3 cau_ntrt4 cau_ntrt5
+cau_ntrt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr_per = chr_per1 chr_per2 chr_per3 chr_per4 chr_per5
+chr_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr_ia = chr_ia1 chr_ia2 chr_ia3 chr_ia4 chr_ia5 chr_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr_sit = chr_sit1 chr_sit2 chr_sit3 chr_sit4 chr_sit5
+chr_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr_trt = chr_trt1 chr_trt2 chr_trt3 chr_trt4 chr_trt5
+chr_trt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr_ntrt = chr_ntrt1 chr_ntrt2 chr_ntrt3 chr_ntrt4 chr_ntrt5
+chr_ntrt6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/md_per = md_per1 md_per2 md_per3 md_per4 md_per5 md_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mb_per = mb_per1 mb_per2 mb_per3 mb_per4 mb_per5 mb_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mv_per = mv_per1 mv_per2 mv_per3 mv_per4 mv_per5 mv_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ud_per = ud_per1 ud_per2 ud_per3 ud_per4 ud_per5 ud_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ub_per = ub_per1 ub_per2 ub_per3 ub_per4 ub_per5 ub_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/uv_per = uv_per1 uv_per2 uv_per3 uv_per4 uv_per5 uv_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/md_ia = md_ia1 md_ia2 md_ia3 md_ia4 md_ia5 md_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mb_ia = mb_ia1 mb_ia2 mb_ia3 mb_ia4 mb_ia5 mb_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mv_ia = mv_ia1 mv_ia2 mv_ia3 mv_ia4 mv_ia5 mv_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ud_ia = ud_ia1 ud_ia2 ud_ia3 ud_ia4 ud_ia5 ud_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ub_ia = ub_ia1 ub_ia2 ub_ia3 ub_ia4 ub_ia5 ub_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/uv_ia = uv_ia1 uv_ia2 uv_ia3 uv_ia4 uv_ia5 uv_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/md_sit= md_sit1 md_sit2 md_sit3 md_sit4 md_sit5 md_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mb_sit= mb_sit1 mb_sit2 mb_sit3 mb_sit4 mb_sit5 mb_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mv_sit= mv_sit1 mv_sit2 mv_sit3 mv_sit4 mv_sit5 mv_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ud_sit= ud_sit1 ud_sit2 ud_sit3 ud_sit4 ud_sit5 ud_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ub_sit= ub_sit1 ub_sit2 ub_sit3 ub_sit4 ub_sit5 ub_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/uv_sit= uv_sit1 uv_sit2 uv_sit3 uv_sit4 uv_sit5 uv_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rea = rea1 rea2 rea3 rea4 rea5 rea6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/int = int1 int2 int3 int4 int5 int6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/chr = chr1 chr2 chr3 chr4 chr5 chr6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/cau = cau1 cau2 cau3 cau4 cau5 cau6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/d = d1 d2 d3 d4 d5 d6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/b = b1 b2 b3 b4 b5 b6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/v = v1 v2 v3 v4 v5 v6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/md = md1 md2 md3 md4 md5 md6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mb = mb1 mb2 mb3 mb4 mb5 mb6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mv = mv1 mv2 mv3 mv4 mv5 mv6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ud = ud1 ud2 ud3 ud4 ud5 ud6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ub = ub1 ub2 ub3 ub4 ub5 ub6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/uv = uv1 uv2 uv3 uv4 uv5 uv6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/d_per = d_per1 d_per2 d_per3 d_per4 d_per5 d_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/b_per = b_per1 b_per2 b_per3 b_per4 b_per5 b_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/v_per = v_per1 v_per2 v_per3 v_per4 v_per5 v_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/d_ia = d_ia1 d_ia2 d_ia3 d_ia4 d_ia5 d_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/b_ia = b_ia1 b_ia2 b_ia3 b_ia4 b_ia5 b_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/v_ia = v_ia1 v_ia2 v_ia3 v_ia4 v_ia5 v_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/d_sit = d_sit1 d_sit2 d_sit3 d_sit4 d_sit5 d_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/b_sit = b_sit1 b_sit2 b_sit3 b_sit4 b_sit5 b_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/v_sit = v_sit1 v_sit2 v_sit3 v_sit4 v_sit5 v_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mr_per = mr_per1 mr_per2 mr_per3 mr_per4 mr_per5 mr_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ur_per = ur_per1 ur_per2 ur_per3 ur_per4 ur_per5 ur_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mr_ia = mr_ia1 mr_ia2 mr_ia3 mr_ia4 mr_ia5 mr_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ur_ia = ur_ia1 ur_ia2 ur_ia3 ur_ia4 ur_ia5 ur_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/mr_sit = mr_sit1 mr_sit2 mr_sit3 mr_sit4 mr_sit5 mr_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/ur_sit = ur_sit1 ur_sit2 ur_sit3 ur_sit4 ur_sit5 ur_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rea_per = rea_per1 rea_per2 rea_per3 rea_per4 rea_per5
+rea_per6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rea_ia = rea_ia1 rea_ia2 rea_ia3 rea_ia4 rea_ia5 rea_ia6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rea_sit = rea_sit1 rea_sit2 rea_sit3 rea_sit4 rea_sit5
+rea_sit6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/m = m1 m2 m3 m4 m5 m6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/u = u1 u2 u3 u4 u5 u6.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** These are the traditional
+(surface-based) person-situation codes, which are <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** computed across ALL
+explanation modes (reasons, causes, causal histories...)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT s_per = e1 e2 e3 e4 e5
+(111, 112, 113, 114, 115, 116, 117, 118, 119, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>211, 212, 213, 214, 215, 216, 217, 218, 219, 311, 312, 313,
+321, 322, 323, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>331, 332, 333, 341, 342, 343, 351, 352, 353, 361, 362, 363,
+371, 372, 373, 411, 412, 413).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT s_ia = e1 e2 e3 e4 e5
+(130, 150, 170, 131, 151, 171, 132, 152, 172, 133, 153,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>173, 134, 154, 174, 135, 155, 175, 136, 156, 176, 137, 157,
+177, 138, 158, 178, 139,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>159, 179, 230, 250, 270, 231, 251, 271, 232, 252, 272, 233,
+253, 273, 234, 254, 274,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>235, 255, 275, 236, 256, 276, 237, 257, 277, 238, 258, 278,
+239, 259, 279, 431, 451,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>471, 432, 452, 472, 433, 453, 473).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT s_sit = e1 e2 e3 e4 e5
+(120, 140, 141, 142, 143, 144, 145, 148, 149, 160, 220,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>240, 241, 242, 243, 244, 245, 248, 249, 260, 421, 422, 423,
+441, 442, 443, 461, 462, 463).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** All parameters with the
+suffix<span style="mso-spacerun: yes">&nbsp; </span>_trt refer to the classic
+trait scores. We typically <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** focus on traits of one's
+personality or character (115, 119, 215, 219), but one could <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** be more inclusive and also
+add 217 scores into a broader &quot;dispositional&quot; parameter (117s <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** and 217s refer to beliefs,
+desires, valuings that have some temporal stability).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT s_trt = e1 e2 e3 e4 e5
+(115, 119, 215, 219).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** If 117s and 217s are added
+to the<span style="mso-spacerun: yes">&nbsp; </span>_trt parameter, they need
+to be removed from the _ntrt<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** parameter, which refers to
+all other person causes that are not traits.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT s_ntrt = e1 e2 e3 e4 e5
+(111, 112, 113, 114,116, 117, 118, 211, 212, 213, 214, 216, 217, 218).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** CAUSES (again,
+traditional scores of person, interaction, situation, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** trait, and nontrait)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT cau_per = e1 e2 e3 e4
+e5 (111, 112, 113, 114, 115, 116, 117, 118, 119).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT cau_ia = e1 e2 e3 e4 e5
+(130, 150, 170, 131, 151, 171, 132, 152, 172, 133, 153, 173, 134,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>154, 174, 135, 155, 175, 136, 156, 176, 137, 157, 177, 138,
+158, 178, 139, 159, 179).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT cau_sit = e1 e2 e3 e4
+e5 (120, 140, 141, 142, 143, 144, 145, 148, 149, 160). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT cau_trt = e1 e2 e3 e4
+e5 (115, 119).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT cau_ntrt = e1 e2 e3 e4
+e5 (111, 112, 113, 114, 116, 117, 118).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau = sum(cau_per,
+cau_ia, cau_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The following restrictions
+ensure that the presence or absence of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** traits is COUNTed only
+when there actually was a person cause given &#8211;&#8211; it would <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** make no sense to COUNT
+zeros (no trait) if there wasn't the possibility for<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** a disposition in the first
+place. In those cases, the parameter &quot;trait&quot; is <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** set to msissing value.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if cau_per = 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode cau_trt cau_ntrt (0 =
+sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if cau = 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode cau_per cau_ia
+cau_sit<span style="mso-spacerun: yes">&nbsp; </span>(0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** CAUSAL HISTORY OF REASON
+EXPLANATIONS (again, traditional scores of person, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** interaction, situation,
+Disposition, and nondisposition)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT chr_per = e1 e2 e3 e4
+e5 (211, 212, 213, 214, 215, 216, 217, 218, 219).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT chr_ia = e1 e2 e3 e4 e5
+(230, 250, 270, 231, 251, 271, 232, 252, 272, 233, 253, 273,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>234, 254, 274, 235, 255, 275, 236, 156, 276, 237, 257, 277,
+238, 258, 278, 239, 259, 279).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT chr_sit = e1 e2 e3 e4
+e5 (220, 240, 241, 242, 243, 244, 245, 247, 249, 260).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT chr_trt = e1 e2 e3 e4
+e5 (215, 219).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT chr_ntrt = e1 e2 e3 e4
+e5 (211, 212, 213, 214, 216, 217, 218).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr = sum(chr_per,
+chr_ia, chr_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** Excluding invalid CHR
+scores<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if (chr_per = 0).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode chr_trt chr_ntrt (0 =
+sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** All explanations of
+intentional behavior, both reasons and causal histories<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT int = e1 e2 e3 e4 e5
+(200 through <u>499</u>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Courier;
+mso-bidi-font-family:Courier;color:red'>** Note that there was an error in the
+previous version of this syntax file:<br>
+** instead of the correct number “499” it
+showed the incorrect “400.” <br>
+** The line has been corrected Jan 15, 7:10 p.m. EST).<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier;color:red'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if int = 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode chr (0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** REASONS <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** First are the
+&quot;molecular&quot; parameters: reasons of a certain type (e.g., desire) with
+a certain <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** content (e.g., agent) and
+present or absent mental state marker .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT md_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(311).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mb_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(312).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mv_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(313).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ud_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(411).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ub_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(412).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT uv_per = e1 e2 e3 e4
+e5<span style="mso-spacerun: yes">&nbsp; </span>(413).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT md_ia = e1 e2 e3 e4 e5
+(331, 351, 371).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mb_ia = e1 e2 e3 e4 e5
+(332, 352, 372).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mv_ia = e1 e2 e3 e4 e5
+(333, 353, 373).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ud_ia = e1 e2 e3 e4 e5
+(431, 451, 471).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ub_ia = e1 e2 e3 e4 e5
+(432, 452, 472).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT uv_ia = e1 e2 e3 e4 e5
+(433, 453, 473).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT md_sit = e1 e2 e3 e4 e5
+(321, 341, 361).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mb_sit = e1 e2 e3 e4 e5
+(322, 342, 362).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT mv_sit = e1 e2 e3 e4 e5
+(323, 343, 363).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ud_sit = e1 e2 e3 e4 e5
+(421, 441, 461).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT ub_sit = e1 e2 e3 e4 e5
+(422, 442, 462).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COUNT uv_sit = e1 e2 e3 e4 e5
+(423, 443, 463).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Creating overarching
+parameters<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP rea = sum (md_per,
+md_ia, md_sit, mb_per, mb_ia, mb_sit,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>mv_per, mv_ia, mv_sit, ud_per, ud_ia, ud_sit, ub_per, ub_ia,
+ub_sit,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>uv_per, uv_ia, uv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d = sum(md_per, md_ia,
+md_sit, ud_per, ud_ia, ud_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b = sum(mb_per, mb_ia,
+mb_sit, ub_per, ub_ia, ub_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v = sum(mv_per, mv_ia,
+mv_sit, uv_per, uv_ia, uv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>* Excluding invalid codes and
+subcodes <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if (d = 0).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode md_per, md_ia, md_sit,
+ud_per, ud_ia, ud_sit (0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if (b = 0).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode mb_per, mb_ia, mb_sit,
+ub_per, ub_ia, ub_sit (0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if (v = 0).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode mv_per, mv_ia, mv_sit,
+uv_per, uv_ia, uv_sit (0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if (rea = 0).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode md_per, md_ia, md_sit,
+mb_per, mb_ia, mb_sit, mv_per, mv_ia, mv_sit, ud_per, ud_ia, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>ud_sit, ub_per, ub_ia, ub_sit, uv_per, uv_ia, uv_sit d b v (0
+= sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>do if int = 0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>recode rea (0 = sysmis).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>end if.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>*** Creating
+intermdeiate-level scores <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Marked or unmarked
+desires/beliefs/valuings (across contents).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP md = sum (md_per, md_ia,
+md_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP mb = sum (mb_per, mb_ia,
+mb_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP mv = sum (mv_per, mv_ia,
+mv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP ud = sum (ud_per, ud_ia,
+ud_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP ub = sum (ub_per, ub_ia,
+ub_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP uv = sum (uv_per, uv_ia,
+uv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Desires/beliefs/valings
+for each content but irrespective of marked/unmarked.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>d_per = sum( md_per, ud_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>b_per = sum( mb_per, ub_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>v_per = sum( mv_per, uv_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>d_ia = sum( md_ia, ud_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>b_ia = sum( mb_ia, ub_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>v_ia = sum( mv_ia, uv_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d_sit =
+sum(md_sit,ud_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b_sit =
+sum(mb_sit,ub_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v_sit =
+sum(mv_sit,uv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Marked/unmarked reasons
+with each content (across des/bel/val).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>mr_per =<span style="mso-spacerun:
+yes">&nbsp; </span>sum (md_per,<span style="mso-spacerun: yes">&nbsp;
+</span>mb_per,<span style="mso-spacerun: yes">&nbsp; </span>mv_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>ur_per =<span style="mso-spacerun:
+yes">&nbsp; </span>sum (ud_per,<span style="mso-spacerun: yes">&nbsp;
+</span>ub_per,<span style="mso-spacerun: yes">&nbsp; </span>uv_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>mr_ia =<span style="mso-spacerun:
+yes">&nbsp; </span>sum (md_ia,<span style="mso-spacerun: yes">&nbsp;
+</span>mb_ia,<span style="mso-spacerun: yes">&nbsp; </span>mv_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>ur_ia =<span style="mso-spacerun:
+yes">&nbsp; </span>sum (ud_ia,<span style="mso-spacerun: yes">&nbsp;
+</span>ub_ia,<span style="mso-spacerun: yes">&nbsp; </span>uv_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP mr_sit = sum (md_sit,
+mb_sit, mv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP ur_sit = sum (ud_sit,
+ub_sit, uv_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Preferred content across
+type and marker<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>rea_per<span style="mso-spacerun:
+yes">&nbsp; </span>= sum (d_per,<span style="mso-spacerun: yes">&nbsp;
+</span>b_per,<span style="mso-spacerun: yes">&nbsp; </span>v_per).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP<span
+style="mso-spacerun: yes">&nbsp; </span>rea_ia<span style="mso-spacerun:
+yes">&nbsp; </span>= sum (d_ia,<span style="mso-spacerun: yes">&nbsp;
+</span>b_ia,<span style="mso-spacerun: yes">&nbsp; </span>v_ia).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP rea_sit = sum (d_sit,
+b_sit, v_sit).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Overall use of markers
+(across type and content)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP m = sum (md, mb, mv).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP u = sum (ud, ub, uv).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>END REPEAT.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>EXECUTE.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Appropriate averaging of
+counts to yield per-behavior scores comes next.<span style="mso-spacerun:
+yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** (For many analyses not all
+of these scores may be needed.)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr = mean(chr1, chr2,
+chr3, chr4, chr5, chr6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP rea = mean(rea1, rea2,
+rea3, rea4, rea5, rea6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d = mean(d1, d2, d3, d4,
+d5, d6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b = mean(b1, b2, b3, b4,
+b5, b6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v = mean(v1, v2, v3, v4,
+v5, v6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP md = mean(md1, md2, md3,
+md4, md5, md6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP mb = mean(mb1, mb2, mb3,
+mb4, mb5, mb6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP mv = mean(mv1, mv2, mv3,
+mv4, mv5, mv6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP ud = mean(ud1, ud2, ud3,
+ud4, ud5, ud6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP ub = mean(ub1, ub2, ub3,
+ub4, ub5, ub6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP uv = mean(uv1, uv2, uv3,
+uv4, uv5, uv6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d_per = mean(d_per1,<span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>d_per2, d_per3, d_per4,
+d_per5, d_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b_per = mean(b_per1,
+b_per2, b_per3, b_per4, b_per5, b_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v_per = mean(v_per1,
+v_per2, v_per3, v_per4, v_per5, v_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d_ia = mean(d_ia1,
+d_ia2, d_ia3, d_ia4, d_ia5, d_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b_ia = mean(b_ia1,
+b_ia2, b_ia3, b_ia4, b_ia5, b_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v_ia = mean(v_ia1,
+v_ia2, v_ia3, v_ia4, v_ia5, v_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP d_sit = mean(d_sit1,
+d_sit2, d_sit3, d_sit4, d_sit5, d_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP b_sit = mean(b_sit1,
+b_sit2, b_sit3, b_sit4, b_sit5, b_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP v_sit = mean(v_sit1,
+v_sit2, v_sit3, v_sit4, v_sit5, v_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP s_per = mean(s_per1,
+s_per2, s_per3, s_per4, s_per5, s_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP s_ia = mean(s_ia1,
+s_ia2, s_ia3, s_ia4, s_ia5, s_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP s_sit = mean(s_sit1,
+s_sit2, s_sit3, s_sit4, s_sit5, s_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau_per = mean(cau_per1,
+cau_per2, cau_per3, cau_per4, cau_per5, cau_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau_ia = mean(cau_ia1,
+cau_ia2, cau_ia3, cau_ia4, cau_ia5, cau_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau_sit = mean(cau_sit1,
+cau_sit2, cau_sit3, cau_sit4, cau_sit5, cau_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau_trt = mean(cau_trt1,
+cau_trt2, cau_trt3, cau_trt4, cau_trt5, cau_trt6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP cau_ntrt =
+mean(cau_ntrt1, cau_ntrt2, cau_ntrt3, cau_ntrt4, cau_ntrt5, cau_ntrt6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr_per = mean(chr_per1,
+chr_per2, chr_per3, chr_per4, chr_per5, chr_per6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr_ia = mean(chr_ia1,
+chr_ia2, chr_ia3, chr_ia4, chr_ia5, chr_ia6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr_sit = mean(chr_sit1,
+chr_sit2, chr_sit3, chr_sit4, chr_sit5, chr_sit6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr_trt = mean(chr_trt1,
+chr_trt2, chr_trt3, chr_trt4, chr_trt5, chr_trt6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>COMP chr_ntrt =
+mean(chr_ntrt1, chr_ntrt2, chr_ntrt3, chr_ntrt4, chr_ntrt5, chr_ntrt6).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The data can now be
+analyzed for each explanation parameter.<span style="mso-spacerun: yes">&nbsp;
+</span>We typically run<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** within-subject Anovas,
+contrasting reasons vs. causal histories, belief reasons <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** vs. desire reasons,
+etc.<span style="mso-spacerun: yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** <span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp; </span>Because the scores have been coded independently,
+one can also choose to <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** analyze the parameters as
+bundles of correlated multivariate dependent variables<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** (e.g., the pair of rea,
+chr; or the triplet of d, b, v).<span style="mso-spacerun: yes">&nbsp;
+</span>However, the interpretation <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** differs. The multivariate
+main effect (e.g., between two groups) of the reason type <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** set of d, b, v shows that
+the two groups differ in reasons, and the discriminant function<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** coefficients for each
+reason type shows how much each contributes to this group difference.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** The multivariate main
+effect of the rea, chr set shows that the two groups differ in<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** overall number of
+explanations, and the discriminant function coefficients show whether <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** reasons or causal
+histories more strongly contribute to this group difference.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova chr rea by COND(1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = rea_chr(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize) .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** For the reason type
+analyses (3-level w/s factor), we choose a pair of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** orthogonal contrasts, (1)
+desire vs. belief and (2) desire/belief vs. valuing.<span style="mso-spacerun:
+yes">&nbsp; </span>In<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** SPSS, this contrast is
+called a &quot;difference contrast,&quot; hence the /contr subcommand diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova d b v<span
+style="mso-spacerun: yes">&nbsp; </span>by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = reatype(3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/contr (reatype) = diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rename = constant des_bel db_val<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ) .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova ub mb by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = marked_bel(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ) .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** We typically don't examine
+the difference between marked and unmarked _desire_ reasons,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** but there may of course be
+occasions in which one would (e.g., in an exploratory study <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** or when examining
+self-focus or mind focus).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova ud md by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = marked_des(2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ) .<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Below are a variety of
+test of the class person-situation distinction, with <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** interactions coded
+separately to get the cleanest possible difference.<span style="mso-spacerun:
+yes">&nbsp; </span>The<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** appropriate contrast is
+therefore again an orthogonal difference pair: person vs.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** situation and
+person/situation vs. interaction.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** This first one treats all
+explanations as part of the same &quot;universe&quot; and simply <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** assesses whether the
+explainer mentions primarily the person, the situation, or <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** an interaction. The
+subsequent ones test more specific person-situation differences,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** namely for causal history
+explanations, cause explanations (of unintentional behavior),<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** and reason contents.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova<span
+style="mso-spacerun: yes">&nbsp; </span>s_per s_sit s_ia by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = surface(3) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/contr(factor) = diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rename = const sit_per ps_ia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova chr_per chr_sit chr_ia
+by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = causes(3) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/contr(causes) = diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rename = const sit_per ps_ia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova cau_per cau_sit cau_ia
+by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = causes(3) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/contr(causes) = diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rename = const sit_per ps_ia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova<span
+style="mso-spacerun: yes">&nbsp; </span>rea_per rea_sit rea_ia by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = reacont(3) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/contr(reacont) = diff<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/rename = const sit_per ps_ia<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print = transform omeans signif(efsize, univ).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>** Finally, two tests
+examoine the contrast between traits vs. nontraits<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova s_trt s_ntrt<span
+style="mso-spacerun: yes">&nbsp; </span>by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = traits (2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print =<span style="mso-spacerun: yes">&nbsp; </span>omeans
+signif(efsize).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova cau_trt cau_ntrt<span
+style="mso-spacerun: yes">&nbsp; </span>by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = traits (2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print =<span style="mso-spacerun: yes">&nbsp; </span>omeans
+signif(efsize).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'>manova chr_trt chr_ntrt<span
+style="mso-spacerun: yes">&nbsp; </span>by Cond( 1,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/wsfact = traits (2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;
+font-family:Courier;mso-bidi-font-family:Courier'><span style="mso-spacerun:
+yes">&nbsp;</span>/print =<span style="mso-spacerun: yes">&nbsp; </span>omeans
+signif(efsize).<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

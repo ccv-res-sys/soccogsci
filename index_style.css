@@ -1,0 +1,191 @@
+.back {
+	width: 1000px;
+	height: 740px;
+	margin: 0 auto;
+	background-color: black;
+}
+.leftcol {
+	width: 185px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.leftfloat {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+.leftfloat a {
+	font-size: 25px;
+	color: red;
+	font-weight: bold;
+	font-family: "Arial";
+}
+.leftfloatbottom {
+	width: 100%;
+	float: left;
+}
+.rightcol {
+	float: right;
+	width: 80%;
+	height: 100%;
+	overflow: auto;
+}
+.midcol {
+	background-color: black;
+	width: 293px;
+	height: 100%;
+	float: left;
+	margin-left: 15px;
+	overflow: auto;
+}
+.midcolfloat {
+	width: 100%;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+.midcolfloatbottom {
+	width: 100%;
+	float: right;
+}
+.midcolfloatbottom a {
+	color:black;
+}
+.rightcolindex {
+	width: 184px;
+	height: 100%;
+	float: left;
+	margin-left: 15px;
+}
+.rightcolindexfloat {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+.indexlink {
+	width: 100%;
+	height: 33%;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 26px;
+	font-family: "Gill Sans";
+	font-weight: bold;
+	color: yellow;
+}
+.indexlink1 {
+	width: 100%;
+	height: 33%;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 26px;
+	font-family: "Gill Sans";
+	font-weight: bold;
+	background-color: white;
+	color: blue;
+}
+.indexlink2 {
+	width: 100%;
+	height: 33%;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 26px;
+	font-family: "Gill Sans";
+	font-weight: bold;
+	background-color: blue;
+	color: white;
+}
+
+.indexlink a:visited {
+	color:inherit;
+}
+.indexlink1 a:visited {
+	color:inherit;
+}
+.indexlink2 a, a:visited {
+	color:white;
+}
+
+.indextitle {
+	padding-top: 20px;
+	font-family: "Gill Sans";
+	font-size: 42px;
+	text-align: center;
+	color: white;
+}
+.indexcontact {
+	font-family: "Gill Sans";
+	text-align: center;
+}
+.indexcontact a {
+	color: black;
+}
+h6 {
+	font-family: "Gill Sans";
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 26px;
+	margin: 0px;
+}
+h7 {
+	font-family: "Gill Sans";
+	padding-top: 12px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	margin: 0px;
+}
+.updated {
+	font-family: "Gill Sans";
+	text-align: center;
+	line-height: 125px;
+	vertical-align: middle;
+	color: blue;
+}
+.resources {
+	text-align: center;
+	font-family: "Gill Sans";
+	font-size: 22px;
+}
+.resources a{
+	color: red;
+	font-style: italic;
+	font-size: 20px;
+}
+.facilities {
+	text-align: center;
+	font-family: "Gill Sans";
+	font-size: 22px;
+	color: gray;
+}
+
+.facilities a {
+	color: yellow;
+	font-style: italic;
+}
+.applications {
+	text-align: center;
+	font-family: "Gill Sans";
+	font-size: 22px;
+	color: blue;
+	font-weight: bold;
+}
+
+.applications a{
+	color: blue;
+	font-size: 22px;
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+}
+.notice {
+	font-family: "Gill Sans";
+	text-align: center;
+}
+.notice a {
+	color: green;
+}

@@ -1,0 +1,48 @@
+
+body {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.mybutton {
+  margin: 1em 2em;
+  font-size: inherit;
+}
+
+.myimg {
+  margin: 1em 1em;
+}
+
+.paragraph-text {
+  text-align: left;
+}
+
+.page-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.page-top {
+  margin: auto;
+  margin-top: 5%;
+}
+
+.margin-box {
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+#url_entry {
+  min-width: 30em;
+  width: 50%;
+  margin: auto;
+  font-size: inherit;
+}
+
+#consent-form-text {
+  font-size: 1.3rem;
+}

@@ -1,0 +1,80 @@
+---
+title: "Minordilemma"
+output: html_document
+---
+Goal: tabulate the results for all our major factors (main effects and the various interactions), with means and standard deviations.
+
+
+```{r}
+rm(list = ls())
+setwd("~/")
+library(ggplot2)
+library(pixiedust)
+library(plyr)
+
+outputtotal <- read.csv("outputtotal.csv",header = TRUE, sep = ",")
+
+summary(outputtotal)
+tapply(outputtotal$BlameResponse, outputtotal$Condition, mean, na.rm = T)
+outputtotal$Agent<-ifelse(outputtotal$Condition== "HNo-P", "Human", 
+                     ifelse(outputtotal$Condition== "HNo", "Human",
+                            ifelse(outputtotal$Condition== "HYes", "Human",
+                                   ifelse(outputtotal$Condition== "HYes-P", "Human", "Robot"))))
+outputtotal$Agent<-as.factor(outputtotal$Agent)
+
+outputtotal$Response<-ifelse(outputtotal$Condition== "HNo-P", "No", 
+                     ifelse(outputtotal$Condition== "HNo", "No",
+                            ifelse(outputtotal$Condition== "RNo", "No",
+                                   ifelse(outputtotal$Condition== "RNo-P", "No", "Yes"))))
+
+outputtotal$DetailedResponse<-ifelse(outputtotal$Condition== "HNo-P", "NoPolite", 
+                     ifelse(outputtotal$Condition== "RNo-P", "NoPolite",
+                            ifelse(outputtotal$Condition== "RNo", "No",
+                                   ifelse(outputtotal$Condition== "HNo", "No", 
+                                          ifelse(outputtotal$Condition== "HYes", "Yes",
+                                                 ifelse(outputtotal$Condition== "RYes","Yes",
+                                                        ifelse(outputtotal$Condition== "HYes-P","YesPolite", "YesPolite")))))))
+
+outputtotal$DetailedResponse<-as.factor(outputtotal$DetailedResponse)
+outputtotal$Response<-as.factor(outputtotal$Response)
+
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+ANOVA_3Way <- aov(BlameResponse ~ Situation * DetailedResponse * Agent + Error(Subject), data =outputtotal) 
+summary(ANOVA_3Way)
+
+dust_ANOVA_3_Way <- dust(ANOVA_3Way) + 
+  sprinkle(cols = c("sumsq", "meansq","statistic"), round = 2)+
+  sprinkle(cols = "p.value", fn = quote(pvalString(value)))+
+  sprinkle_colnames("Type","Factor","df","SS","Mean SS", "F","p")
+
+summary(lm(BlameResponse ~ Situation * DetailedResponse *Agent, outputtotal))
+
+ANOVA_3Way.means.sem <- ddply(outputtotal, c("Situation","DetailedResponse", "Agent"), summarise,mean=mean(BlameResponse, na.rm = TRUE), sem=sd(BlameResponse, na.rm = TRUE)/sqrt(468))
+
+ANOVA_3Way.means.sem <- transform(ANOVA_3Way.means.sem, lower=mean-sem, upper=mean+sem)
+
+
+
+dodge <- position_dodge(width=0.9)
+
+plot_3Way <- ggplot(ANOVA_3Way.means.sem, aes(x = Agent, y = mean, fill = DetailedResponse))+
+  scale_fill_manual(values = c("#FF0000", "burlywood4","#FFFFFF","gray"))+
+  geom_bar(stat = "identity", position = dodge, color = "black")+
+  geom_errorbar(aes(ymax = upper, ymin = lower), width=0.2, position=position_dodge(0.9))+
+  facet_grid(.~Situation)+
+  labs(title = "Blame Response", x = "Agents", y = "Blame Rating")+
+  theme_bw()
+plot_3Way
+ggsave("3-Way.png", width = 14, height = 10)
+
+```
+
+```{r}
+
+
+```
+

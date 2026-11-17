@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Study</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="page-centered">
+    <p>
+      Thank you for your interest in our study. You have decided not to participate in the study.
+    </p>
+    <p>
+      This page will redirect back to the start in 5 seconds.
+    </p>
+
+    <a href="index.html" class="mybutton btn btn-light">Return to start screen</a>
+
+  </div>
+
+</body>
+
+<script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+
+  window.setTimeout(goHome, 5*1000);
+
+</script>
+
+</html>

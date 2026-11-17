@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Malle, Bertram</Author>
+  <LastAuthor>Malle, Bertram</LastAuthor>
+  <Created>2024-02-21T19:32:04Z</Created>
+  <LastSaved>2024-02-21T19:32:18Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>15940</WindowHeight>
+  <WindowWidth>26900</WindowWidth>
+  <WindowTopX>6340</WindowTopX>
+  <WindowTopY>3300</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ArialMT" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="_GoBack" ss:RefersTo="=Sheet1!R1C1"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="19" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="75" ss:DefaultRowHeight="16">
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_Y_Des&gt;I wanted to save Jessie's life&lt;/BL_Y_Des&gt;</Data><NamedCell
+      ss:Name="_GoBack"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_Y_Bel&gt;I knew I could save Jessie's life&lt;/BL_Y_Bel&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_Y_Deo&gt;Saving a life is the moral action to take&lt;/BL_Y_Deo&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_Y_Uti&gt;This way, Jessie's life would be saved&lt;/BL_Y_Uti&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_N_Des&gt;I wanted the other person's consent for the transfusion&lt;/BL_N_Des&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_N_Bel&gt;I knew that the other person had not given consent&lt;/BL_N_Bel&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_N_Deo&gt;It is morally wrong to violate a person's autonomy&lt;/BL_N_Deo&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_N_Uti&gt;This way, the other patient would not be subjected to a transfusion without their consent.&lt;/BL_N_Uti&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;BL_Mere&gt;The ethics review could not be completed in time, so I had to make a decision&lt;/BL_Mere&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;empty&gt;&lt;/empty&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_Y_Des&gt;I wanted to save more lives&lt;/AI_Y_Des&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_Y_Bel&gt;I knew fewer lives would be lost&lt;/AI_Y_Bel&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_Y_Deo&gt;It is morally required to save as many lives as possible&lt;/AI_Y_Deo&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_Y_Uti&gt;More lives would be saved&lt;/AI_Y_Uti&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_N_Des&gt;I wanted to protect the child's life&lt;/AI_N_Des&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_N_Bel&gt;I knew the child could die&lt;/AI_N_Bel&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_N_Deo&gt;It is morally wrong to violate a person's autonomy&lt;/AI_N_Deo&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_N_Uti&gt;The consequences of killing the child would be disastrous&lt;/AI_N_Uti&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;AI_Mere&gt;The commanders approved either course of action, so I had to make a decision&lt;/AI_Mere&gt;</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R19C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

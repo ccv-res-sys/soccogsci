@@ -1,0 +1,763 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Malle, Bertram</Author>
+  <LastAuthor>Malle, Bertram</LastAuthor>
+  <Created>2026-05-05T19:00:26Z</Created>
+  <LastSaved>2026-05-05T19:00:49Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <SupBook>
+   <Path>/Library/Application Support/Microsoft/Office365/User Content.localized/Startup/Excel/AcrobatExcelAddin.xlam</Path>
+   <SheetName>Sheet1</SheetName>
+   <Xct>
+    <Count>0</Count>
+    <SheetIndex>0</SheetIndex>
+   </Xct>
+  </SupBook>
+  <WindowHeight>16620</WindowHeight>
+  <WindowWidth>20080</WindowWidth>
+  <WindowTopX>13160</WindowTopX>
+  <WindowTopY>3380</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Avenir" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Normal 2">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ArialMT" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63" ss:Parent="s62">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Monaco" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65" ss:Parent="s62">
+   <Font ss:FontName="Monaco" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Verbs">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="222" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="75"
+   ss:DefaultRowHeight="16">
+   <Column ss:StyleID="s65"/>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj1&gt; objected to Carlos packing the food. &lt;/obj1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took1&gt; took issue with Carlos packing the food. &lt;/took1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep1&gt; reproached Carlos for packing the food. &lt;/rep1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco1&gt; scolded Carlos for packing the food. &lt;/sco1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let1&gt; let Carlos have it for packing the food. &lt;/let1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash1&gt; lashed out at Carlos for packing the food. &lt;/lash1&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj2&gt; objected to Evelyn drinking the entire cocktail. &lt;/obj2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took2&gt; took issue with Evelyn drinking the entire cocktail. &lt;/took2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep2&gt; reproached Evelyn for drinking the entire cocktail. &lt;/rep2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco2&gt; scolded Evelyn for drinking the entire cocktail. &lt;/sco2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let2&gt; let Evelyn have it for drinking the entire cocktail. &lt;/let2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash2&gt; lashed out at Evelyn for drinking the entire cocktail. &lt;/lash2&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj3&gt; objected to Leo filling the water cup with soda. &lt;/obj3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took3&gt; took issue with Leo filling the water cup with soda. &lt;/took3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep3&gt; reproached Leo for filling the water cup with soda. &lt;/rep3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco3&gt; scolded Leo for filling the water cup with soda. &lt;/sco3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let3&gt; let Leo have it for filling the water cup with soda. &lt;/let3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash3&gt; lashed out at Leo for filling the water cup with soda. &lt;/lash3&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj4&gt; objected to Martha saying &quot;You're ugly.&quot; &lt;/obj4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took4&gt; took issue with Martha saying &quot;You're ugly.&quot; &lt;/took4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep4&gt; reproached Martha for saying &quot;You're ugly.&quot; &lt;/rep4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco4&gt; scolded Martha for saying &quot;You're ugly.&quot; &lt;/sco4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let4&gt; let Martha have it for saying &quot;You're ugly.&quot; &lt;/let4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash4&gt; lashed out at Martha for saying &quot;You're ugly.&quot; &lt;/lash4&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj5&gt; objected to Todd lying about the Master degree. &lt;/obj5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took5&gt; took issue with Todd lying about the Master degree. &lt;/took5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep5&gt; reproached Todd for lying about the Master degree. &lt;/rep5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco5&gt; scolded Todd for lying about the Master degree. &lt;/sco5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let5&gt; let Todd have it for lying about the Master degree. &lt;/let5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash5&gt; lashed out at Todd for lying about the Master degree. &lt;/lash5&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj6&gt; objected to Betty cheating on her boyfriend. &lt;/obj6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took6&gt; took issue with Betty cheating on her boyfriend. &lt;/took6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep6&gt; reproached Betty for cheating on her boyfriend. &lt;/rep6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco6&gt; scolded Betty for cheating on her boyfriend. &lt;/sco6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let6&gt; let Betty have it for cheating on her boyfriend. &lt;/let6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash6&gt; lashed out at Betty for cheating on her boyfriend. &lt;/lash6&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj7&gt; objected to Nathan knocking out the other parent. &lt;/obj7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took7&gt; took issue with Nathan knocking out the other parent. &lt;/took7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep7&gt; reproached Nathan for knocking out the other parent. &lt;/rep7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco7&gt; scolded Nathan for knocking out the other parent. &lt;/sco7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let7&gt; let Nathan have it for knocking out the other parent. &lt;/let7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash7&gt; lashed out at Nathan for knocking out the other parent. &lt;/lash7&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj8&gt; objected to Albert for severely beating the personnel manager. &lt;/obj8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took8&gt; took issue with Albert for severely beating the personnel manager. &lt;/took8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep8&gt; reproached Albert for for severely beating the personnel manager. &lt;/rep8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco8&gt; scolded Albert for for severely beating the personnel manager. &lt;/sco8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let8&gt; let Albert have it for for severely beating the personnel manager. &lt;/let8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash8&gt; lashed out at Albert for for severely beating the personnel manager. &lt;/lash8&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj9&gt; objected to Tara putting the poison in the beef. &lt;/obj9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took9&gt; took issue with Tara putting the poison in the beef. &lt;/took9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep9&gt; reproached Tara for putting the poison in the beef. &lt;/rep9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco9&gt; scolded Tara for putting the poison in the beef. &lt;/sco9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let9&gt; let Tara have it for putting the poison in the beef. &lt;/let9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash9&gt; lashed out at Tara for putting the poison in the beef. &lt;/lash9&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj10&gt; objected to Paul losing the corrections. &lt;/obj10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took10&gt; took issue with Paul losing the corrections. &lt;/took10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep10&gt; reproached Paul for losing the corrections. &lt;/rep10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco10&gt; scolded Paul for losing the corrections. &lt;/sco10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let10&gt; let Paul have it for losing the corrections. &lt;/let10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash10&gt; lashed out at Paul for losing the corrections. &lt;/lash10&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj11&gt; objected to Jasmin addressing the co-worker wife as his mother.  &lt;/obj11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took11&gt; took issue with Jasmin addressing the co-worker wife as his mother.  &lt;/took11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep11&gt; reproached Jasmin for addressing the co-worker wife as his mother.  &lt;/rep11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco11&gt; scolded Jasmin for addressing the co-worker wife as his mother.  &lt;/sco11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let11&gt; let Jasmin have it for addressing the co-worker wife as his mother.  &lt;/let11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash11&gt; lashed out at Jasmin for addressing the co-worker wife as his mother.  &lt;/lash11&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj12&gt; objected to Amy missing her dad birthday. &lt;/obj12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took12&gt; took issue with Amy missing her dad birthday. &lt;/took12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep12&gt; reproached Amy for missing her dad birthday. &lt;/rep12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco12&gt; scolded Amy for missing her dad birthday. &lt;/sco12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let12&gt; let Amy have it for missing her dad birthday. &lt;/let12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash12&gt; lashed out at Amy for missing her dad birthday. &lt;/lash12&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj13&gt; objected to Marcus selling cigarettes to a 16-year-old. &lt;/obj13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took13&gt; took issue with Marcus selling cigarettes to a 16-year-old. &lt;/took13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep13&gt; reproached Marcus for selling cigarettes to a 16-year-old. &lt;/rep13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco13&gt; scolded Marcus for selling cigarettes to a 16-year-old. &lt;/sco13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let13&gt; let Marcus have it for selling cigarettes to a 16-year-old. &lt;/let13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash13&gt; lashed out at Marcus for selling cigarettes to a 16-year-old. &lt;/lash13&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj14&gt; objected to Joshua knocking over the toddler. &lt;/obj14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took14&gt; took issue with Joshua knocking over the toddler. &lt;/took14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep14&gt; reproached Joshua for knocking over the toddler. &lt;/rep14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco14&gt; scolded Joshua for knocking over the toddler. &lt;/sco14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let14&gt; let Joshua have it for knocking over the toddler. &lt;/let14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash14&gt; lashed out at Joshua for knocking over the toddler. &lt;/lash14&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj15&gt; objected to Ruby putting up the blockade. &lt;/obj15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took15&gt; took issue with Ruby putting up the blockade. &lt;/took15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep15&gt; reproached Ruby for putting up the blockade. &lt;/rep15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco15&gt; scolded Ruby for putting up the blockade. &lt;/sco15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let15&gt; let Ruby have it for putting up the blockade. &lt;/let15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash15&gt; lashed out at Ruby for putting up the blockade. &lt;/lash15&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj16&gt; objected to Glenn hitting the old man. &lt;/obj16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took16&gt; took issue with Glenn hitting the old man. &lt;/took16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep16&gt; reproached Glenn for hitting the old man. &lt;/rep16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco16&gt; scolded Glenn for hitting the old man. &lt;/sco16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let16&gt; let Glenn have it for hitting the old man. &lt;/let16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash16&gt; lashed out at Glenn for hitting the old man. &lt;/lash16&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj17&gt; objected to Claire leaving her son in the car. &lt;/obj17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took17&gt; took issue with Claire leaving her son in the car. &lt;/took17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep17&gt; reproached Claire for leaving her son in the car. &lt;/rep17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco17&gt; scolded Claire for leaving her son in the car. &lt;/sco17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let17&gt; let Claire have it for leaving her son in the car. &lt;/let17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash17&gt; lashed out at Claire for leaving her son in the car. &lt;/lash17&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj18&gt; objected to Kimberly causing a gas explosion. &lt;/obj18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took18&gt; took issue with Kimberly causing a gas explosion. &lt;/took18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep18&gt; reproached Kimberly for causing a gas explosion. &lt;/rep18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco18&gt; scolded Kimberly for causing a gas explosion. &lt;/sco18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let18&gt; let Kimberly have it for causing a gas explosion. &lt;/let18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash18&gt; lashed out at Kimberly for causing a gas explosion. &lt;/lash18&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj19&gt; objected to Evelyn packing food for her roommate. &lt;/obj19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took19&gt; took issue with Evelyn packing food for her roommate. &lt;/took19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep19&gt; reproached Evelyn for packing food for her roommate. &lt;/rep19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco19&gt; scolded Evelyn for packing food for her roommate. &lt;/sco19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let19&gt; let Evelyn have it for packing food for her roommate. &lt;/let19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash19&gt; lashed out at Evelyn for packing food for her roommate. &lt;/lash19&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj20&gt; objected to Carlos drinking the entire cocktail. &lt;/obj20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took20&gt; took issue with Carlos drinking the entire cocktail. &lt;/took20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep20&gt; reproached Carlos for drinking the entire cocktail. &lt;/rep20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco20&gt; scolded Carlos for drinking the entire cocktail. &lt;/sco20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let20&gt; let Carlos have it for drinking the entire cocktail. &lt;/let20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash20&gt; lashed out at Carlos for drinking the entire cocktail. &lt;/lash20&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj21&gt; objected to Martha filling the water cup with soda. &lt;/obj21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took21&gt; took issue with Martha filling the water cup with soda. &lt;/took21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep21&gt; reproached Martha for filling the water cup with soda. &lt;/rep21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco21&gt; scolded Martha for filling the water cup with soda. &lt;/sco21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let21&gt; let Martha have it for filling the water cup with soda. &lt;/let21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash21&gt; lashed out at Martha for filling the water cup with soda. &lt;/lash21&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj22&gt; objected to Leo saying &quot;You're ugly.&quot; &lt;/obj22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took22&gt; took issue with Leo saying &quot;You're ugly.&quot; &lt;/took22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep22&gt; reproached Leo for saying &quot;You're ugly.&quot; &lt;/rep22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco22&gt; scolded Leo for saying &quot;You're ugly.&quot; &lt;/sco22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let22&gt; let Leo have it for saying &quot;You're ugly.&quot; &lt;/let22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash22&gt; lashed out at Leo for saying &quot;You're ugly.&quot; &lt;/lash22&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj23&gt; objected to Tara lying about the Master degree. &lt;/obj23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took23&gt; took issue with Tara lying about the Master degree. &lt;/took23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep23&gt; reproached Tara for lying about the Master degree. &lt;/rep23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco23&gt; scolded Tara for lying about the Master degree. &lt;/sco23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let23&gt; let Tara have it for lying about the Master degree. &lt;/let23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash23&gt; lashed out at Tara for lying about the Master degree. &lt;/lash23&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj24&gt; objected to Nathan cheating on his girlfriend. &lt;/obj24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took24&gt; took issue with Nathan cheating on his girlfriend. &lt;/took24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep24&gt; reproached Nathan for cheating on his girlfriend. &lt;/rep24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco24&gt; scolded Nathan for cheating on his girlfriend. &lt;/sco24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let24&gt; let Nathan have it for cheating on his girlfriend. &lt;/let24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash24&gt; lashed out at Nathan for cheating on his girlfriend. &lt;/lash24&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj25&gt; objected to Betty knocking out the other parent. &lt;/obj25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took25&gt; took issue with Betty knocking out the other parent. &lt;/took25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep25&gt; reproached Betty for knocking out the other parent. &lt;/rep25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco25&gt; scolded Betty for knocking out the other parent. &lt;/sco25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let25&gt; let Betty have it for knocking out the other parent. &lt;/let25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash25&gt; lashed out at Betty for knocking out the other parent. &lt;/lash25&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj26&gt; objected to Jasmin for severely beating the personnel manager. &lt;/obj26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took26&gt; took issue with Jasmin for severely beating the personnel manager. &lt;/took26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep26&gt; reproached Jasmin for for severely beating the personnel manager. &lt;/rep26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco26&gt; scolded Jasmin for for severely beating the personnel manager. &lt;/sco26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let26&gt; let Jasmin have it for for severely beating the personnel manager. &lt;/let26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash26&gt; lashed out at Jasmin for for severely beating the personnel manager. &lt;/lash26&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj27&gt; objected to Todd putting the poison in the beef. &lt;/obj27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took27&gt; took issue with Todd putting the poison in the beef. &lt;/took27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep27&gt; reproached Todd for putting the poison in the beef. &lt;/rep27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco27&gt; scolded Todd for putting the poison in the beef. &lt;/sco27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let27&gt; let Todd have it for putting the poison in the beef. &lt;/let27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash27&gt; lashed out at Todd for putting the poison in the beef. &lt;/lash27&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj28&gt; objected to Amy losing the corrections. &lt;/obj28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took28&gt; took issue with Amy losing the corrections. &lt;/took28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep28&gt; reproached Amy for losing the corrections. &lt;/rep28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco28&gt; scolded Amy for losing the corrections. &lt;/sco28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let28&gt; let Amy have it for losing the corrections. &lt;/let28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash28&gt; lashed out at Amy for losing the corrections. &lt;/lash28&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj29&gt; objected to Albert addressing the co-worker wife as his mother.  &lt;/obj29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took29&gt; took issue with Albert addressing the co-worker wife as his mother.  &lt;/took29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep29&gt; reproached Albert for addressing the co-worker wife as his mother.  &lt;/rep29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco29&gt; scolded Albert for addressing the co-worker wife as his mother.  &lt;/sco29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let29&gt; let Albert have it for addressing the co-worker wife as his mother.  &lt;/let29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash29&gt; lashed out at Albert for addressing the co-worker wife as his mother.  &lt;/lash29&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj30&gt; objected to Paul missing his dad birthday. &lt;/obj30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took30&gt; took issue with Paul missing his dad birthday. &lt;/took30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep30&gt; reproached Paul for missing his dad birthday. &lt;/rep30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco30&gt; scolded Paul for missing his dad birthday. &lt;/sco30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let30&gt; let Paul have it for missing his dad birthday. &lt;/let30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash30&gt; lashed out at Paul for missing his dad birthday. &lt;/lash30&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj31&gt; objected to Claire selling cigarettes to a 16-year-old. &lt;/obj31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took31&gt; took issue with Claire selling cigarettes to a 16-year-old. &lt;/took31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep31&gt; reproached Claire for selling cigarettes to a 16-year-old. &lt;/rep31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco31&gt; scolded Claire for selling cigarettes to a 16-year-old. &lt;/sco31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let31&gt; let Claire have it for selling cigarettes to a 16-year-old. &lt;/let31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash31&gt; lashed out at Claire for selling cigarettes to a 16-year-old. &lt;/lash31&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj32&gt; objected to Ruby knocking over the toddler. &lt;/obj32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took32&gt; took issue with Ruby knocking over the toddler. &lt;/took32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep32&gt; reproached Ruby for knocking over the toddler. &lt;/rep32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco32&gt; scolded Ruby for knocking over the toddler. &lt;/sco32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let32&gt; let Ruby have it for knocking over the toddler. &lt;/let32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash32&gt; lashed out at Ruby for knocking over the toddler. &lt;/lash32&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj33&gt; objected to Joshua putting up the blockade. &lt;/obj33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took33&gt; took issue with Joshua putting up the blockade. &lt;/took33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep33&gt; reproached Joshua for putting up the blockade. &lt;/rep33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco33&gt; scolded Joshua for putting up the blockade. &lt;/sco33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let33&gt; let Joshua have it for putting up the blockade. &lt;/let33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash33&gt; lashed out at Joshua for putting up the blockade. &lt;/lash33&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj34&gt; objected to Kimberly hitting the old man. &lt;/obj34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took34&gt; took issue with Kimberly hitting the old man. &lt;/took34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep34&gt; reproached Kimberly for hitting the old man. &lt;/rep34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco34&gt; scolded Kimberly for hitting the old man. &lt;/sco34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let34&gt; let Kimberly have it for hitting the old man. &lt;/let34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash34&gt; lashed out at Kimberly for hitting the old man. &lt;/lash34&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj35&gt; objected to Marcus leaving his son in the car. &lt;/obj35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took35&gt; took issue with Marcus leaving his son in the car. &lt;/took35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep35&gt; reproached Marcus for leaving his son in the car. &lt;/rep35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco35&gt; scolded Marcus for leaving his son in the car. &lt;/sco35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let35&gt; let Marcus have it for leaving his son in the car. &lt;/let35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash35&gt; lashed out at Marcus for leaving his son in the car. &lt;/lash35&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;obj36&gt; objected to Glenn causing a gas explosion. &lt;/obj36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;took36&gt; took issue with Glenn causing a gas explosion. &lt;/took36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;rep36&gt; reproached Glenn for causing a gas explosion. &lt;/rep36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;sco36&gt; scolded Glenn for causing a gas explosion. &lt;/sco36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;let36&gt; let Glenn have it for causing a gas explosion. &lt;/let36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;lash36&gt; lashed out at Glenn for causing a gas explosion. &lt;/lash36&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>24</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="75" ss:DefaultRowHeight="17">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Malle, Bertram</Author>
+  <LastAuthor>Malle, Bertram</LastAuthor>
+  <Created>2023-11-28T06:17:38Z</Created>
+  <LastSaved>2024-01-21T15:44:10Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>16840</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
+  <WindowTopX>2700</WindowTopX>
+  <WindowTopY>3620</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ArialMT" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="27" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="75" ss:DefaultRowHeight="16">
+   <Column ss:StyleID="s62" ss:Width="1553"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis1&gt;Its mission is to provide safe, efficient, and effective intercity rail mobility. As the United States' only intercity passenger railroad, it aims to provide friendly, high-quality service that is financially competitive with other intercity travel options.&lt;/mis1&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis2&gt;Its mission is to serve as the nation’s leading provider of quality data about the U.S.’s people, places, and economy.  It is the federal government’s largest statistical agency and delivers current facts and figures with timeliness, relevance, and highest quality.&lt;/mis2&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis3&gt;Its mission is to promote healthy behavior, prevent illness and injury, provide science-based information, and fight disease. It conducts critical science and provides health information that protects our nation against expensive and dangerous health threats, and responds when these arise.&lt;/mis3&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis4&gt;Its mission is to keep terrorists and their weapons out of the United States while facilitating lawful international travel and trade. It manages customs, immigration, border security, and the protection of agriculture in one coordinated and supportive activity.&lt;/mis4&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis5&gt;Its mission is to understand, manage, and reduce risks to our cyber- and physical infrastructure.  It is the operational lead for federal cybersecurity and the national coordinator for building a more secure and resilient infrastructure for the future.&lt;/mis5&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis6&gt;Its mission is to provide military forces that deter and win wars and protect the security of America and its allies.  It coordinates and supervises all U.S. government agencies directly related to national security and the United States Armed Forces.&lt;/mis6&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis7&gt;Its mission is to promote student achievement and preparation for global competitiveness by means of research, funding, and policy. It establishes and monitors federal financial aid, collects data on America’s schools, disseminates research, and ensures equal access to education.&lt;/mis7&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis8&gt;Its mission is to uphold the rule of law, to keep the United States safe, and to protect people’s civil rights. It does so by preserving our democratic institutions, combatting crime and corruption, and administering a just court and correctional system.&lt;/mis8&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis9&gt;Its mission is to maintain a strong economy and create economic and job opportunities for Americans.  It does so by promoting economic growth, protecting the integrity of the financial system, and managing the U.S. Government’s finances and resources.&lt;/mis9&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis10&gt;Its mission is to protect human health and the environment. It conducts research and both develops and enforces regulations so that Americans have clean air, land, and water and receive accurate information about human health and environmental risks.&lt;/mis10&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis11&gt;Its mission is to provide the safest, most efficient aerospace system in the world. It issues and enforces regulations and minimum standards for aviation and operates a network of airport towers, air route traffic control centers, and flight service stations.&lt;/mis11&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis12&gt;Its mission is to keep the American people safe from terrorist attack, foreign espionage, cybercriminal activity, and any kind of public corruption and violent crime.  It upholds the U.S. Constitution and protects Americans’ civil rights.&lt;/mis12&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis13&gt;Its mission is to provide progressive care for federal inmates and to ensure consistent and professional administration of the prison service.  It ensures that federal offenders serve their sentences in safe, humane, cost-efficient, and secure facilities and provide reentry programming.&lt;/mis13&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis14&gt;Its mission is to help people before, during and after disasters. It supports citizens and emergency personnel to build, sustain, and improve the nation's capability to prepare for, protect against, respond to, recover from, and mitigate all hazards.&lt;/mis14&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis15&gt;Its mission is to advance and protect public health in the U.S. It does so by ensuring the security of the food supply, the efficacy and safety of medical drugs and devices, and the accuracy of science-based information to maintain and improve health.&lt;/mis15&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis16&gt;Its mission is to administer and enforce U.S. federal tax laws.  Its role is to help the large majority of compliant taxpayers with the tax law, while ensuring that the minority who are unwilling to comply pay their fair share.&lt;/mis16&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis17&gt;Its mission is to promote the welfare of the wage earners, job seekers, and retirees of the United States. It does so by fostering and enforcing safe working conditions, fair pay, and protection against employment discrimination.&lt;/mis17&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis18&gt;Its mission is to engage and inform Congress and the American people with rich, diverse, and enduring knowledge. It is the largest library in the world, with its collections of millions of books, video, audio recordings, photographs, maps, and more.&lt;/mis18&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis19&gt;Its mission is to drive advances in science, technology, and space exploration to enhance knowledge, education, and stewardship of the Earth. NASA studies Earth, our solar system, and beyond by conducting research, testing, and development to advance aeronautics.&lt;/mis19&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis20&gt;Its mission is to promote and sustain an environment in which the arts benefit everyone. As the largest funder of the arts and arts education in the U.S., it allows people across America to experience and actively participate in the arts.&lt;/mis20&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis21&gt;Its mission is to promote and lead the world in science, engineering, and education. It funds about 25% of federal support to America's colleges and universities for basic and solutions-oriented research with the potential to produce advancements for the American people.&lt;/mis21&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis22&gt;Its mission is to reintroduce and save species for future generations and unite humans in support of a biodiverse planet. It does so by using cutting-edge science, sharing knowledge, and providing impactful education opportunities for a broad audience.&lt;/mis22&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis23&gt;Its mission is to eliminate housing discrimination, promote economic opportunity, and achieve diverse, inclusive communities.  It does so by enforcing federal fair housing laws and ensuring that all Americans have equal access to the housing of their choice.&lt;/mis23&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis24&gt;Its mission is to serve the American people by providing safe and secure mail processing and delivery services to individuals and businesses in the U.S. It provides mail processing and delivery services to individuals and businesses in the U.S.&lt;/mis24&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis25&gt;Their mission is to preserve heritage, discover new knowledge, and share their collections with the world. As a group of museums, education and research centers, they build a national culture of learning and explore what it means to be an American.&lt;/mis25&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis26&gt;Its mission is to provide financial protection for Americans throughout their lives by administering retirement, disability, survivor and family benefits, and Medicare.  It pays benefits to about 64 million people including retirees, children, widows, and widowers.&lt;/mis26&gt;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">&lt;mis27&gt;Its mission is to protect the nation’s transportation systems and to ensure freedom of movement for people and commerce, primarily by ensuring airport security and prevent aircraft hijacking. It is responsible for screening passengers and baggage at more than 450 U.S. airports.&lt;/mis27&gt;</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Zoom>107</Zoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>24</ActiveRow>
+     <RangeSelection>R25</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

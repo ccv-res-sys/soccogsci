@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Study</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="page-centered margin-box">
+    <p>
+      Please enter the web address given to you and then click "Start study" to go to that address.
+    </p>
+    <input id="url_entry" type="url" class="form-control" placeholder="Enter your web address here"/>
+    <a onclick="onSubmit();" class="mybutton btn btn-secondary" style="color:white;">Start study</a>
+
+    <a href="index.html" class="mybutton btn btn-light">Return to start screen</a>
+  </div>
+
+</body>
+<script>
+  function onSubmit() {
+    url = document.getElementById("url_entry").value;
+    if (!url.includes('https://') && !url.includes("http://")) {
+      url = "https://" + url;
+    }
+    window.location.href = url;
+  }
+
+</script>
+
+</html>
